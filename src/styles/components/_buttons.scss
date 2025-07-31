@@ -1,0 +1,46 @@
+@use "../abstracts" as *;
+
+.button {
+	white-space: nowrap;
+	padding: toRem(17) toRem(40);
+	border: 2px solid;
+	font-weight: 600;
+	text-align: center;
+	transition:
+		color 0.2s ease-in-out,
+		background-color 0.2s ease-in-out;
+	&-primary {
+		color: var(--heading-color);
+		border-color: var(--primary-color);
+		background-color: var(--primary-color);
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: var(--contrast-color);
+			}
+		}
+	}
+
+	&-secondary {
+		color: var(--contrast-color);
+		border-color: var(--secondary-color);
+		background-color: var(--secondary-color);
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--secondary-color);
+				background-color: var(--contrast-color);
+			}
+		}
+	}
+
+	&-dark {
+		color: var(--contrast-color);
+		border-color: var(--heading-color);
+		background-color: var(--heading-color);
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--heading-color);
+				background-color: var(--contrast-color);
+			}
+		}
+	}
+}

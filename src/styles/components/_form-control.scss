@@ -1,0 +1,24 @@
+@use "../abstracts" as *;
+
+.form-control {
+	width: 100%;
+	min-height: toRem(65);
+	padding-inline: toRem(25) toRem(12);
+	border: 1px solid #dddddd;
+	color: var(--heading-color);
+	background-color: #f8f8f8;
+	&::placeholder {
+		color: inherit;
+	}
+
+	&:focus {
+		border-color: #3898ec;
+		outline: 0;
+	}
+}
+
+textarea.form-control {
+	min-height: toRem(150);
+	padding-block: toRem(20) toRem(8);
+	resize: vertical;
+}

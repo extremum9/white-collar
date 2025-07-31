@@ -1,0 +1,15 @@
+@use "abstracts" as *;
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-primary);
+  font-size: var(--text-size-base);
+  letter-spacing: toEm(0.32);
+  color: var(--paragraph-color);
+  background-color: var(--contrast-color);
+}
+
+main {
+  flex-grow: 1;
+}
