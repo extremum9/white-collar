@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+.dropdown-menu {
+	position: relative;
+	@media (any-hover: hover) {
+		&:hover {
+			> .dropdown-menu-list {
+				display: block;
+			}
+		}
+	}
+
+	&-list {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		min-width: toRem(190);
+		padding-block: toRem(10) toRem(15);
+		background-color: var(--background-color);
+	}
+
+	&-link {
+		width: 100%;
+		padding: toRem(10) toRem(20);
+	}
+}
