@@ -28,6 +28,7 @@
               whitecollar@gmail.com
             </a>
           </address>
+
           <div class="topbar-contacts">
             <div class="topbar-address-item">
               <svg width="17" height="16" aria-hidden="true">
@@ -75,7 +76,7 @@
 
       <div class="topbar-body">
         <div class="container">
-          <a href="/" aria-current="page">
+          <a class="topbar-brand" href="#" aria-current="page">
             <img
               src="/images/white-collar-logo.svg"
               width="200"
@@ -83,60 +84,66 @@
               alt="White Collar logo"
             />
           </a>
-          <div class="topbar-menu">
-            <nav class="topbar-nav">
-              <ul class="nav-list" role="list" aria-label="Primary">
-                <li>
-                  <a class="nav-link current" href="/" aria-current="page"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a class="nav-link" href="/">About Us</a>
-                </li>
-                <li class="dropdown-menu">
-                  <a class="nav-link nav-link-dropdown" href="/">
-                    Pages
-                    <svg width="11" height="7">
-                      <use href="/icons/icons.svg#arrow-down"></use>
-                    </svg>
-                  </a>
-                  <ul class="dropdown-menu-list">
-                    <li>
-                      <a class="dropdown-menu-link" href="/">Our Services</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-menu-link" href="/">Services Single</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-menu-link" href="/">Pricing</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-menu-link" href="/">Our Team</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-menu-link" href="/">FAQ</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-menu-link" href="/">Blog</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a class="nav-link" href="/">Projects</a>
-                </li>
-                <li>
-                  <a class="nav-link" href="/">Contact Us</a>
-                </li>
-              </ul>
-            </nav>
+
+          <nav class="topbar-nav">
+            <ul class="nav-list" role="list" aria-label="Primary">
+              <li>
+                <a class="nav-link current" href="#" aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="dropdown-menu">
+                <a class="nav-link nav-link-dropdown" href="#">
+                  Pages
+                  <svg width="11" height="7" aria-hidden="true">
+                    <use href="/icons/icons.svg#arrow-down"></use>
+                  </svg>
+                </a>
+                <ul class="dropdown-menu-list">
+                  <li>
+                    <a class="dropdown-menu-link" href="#">Our Services</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu-link" href="#">Services Single</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu-link" href="#">Pricing</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu-link" href="#">Our Team</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu-link" href="#">FAQ</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu-link" href="#">Blog</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="topbar-actions">
             <button class="button button-secondary" type="button">
               Get Consulting
+            </button>
+            <button class="hamburger-button" type="button">
+              <span></span>
             </button>
           </div>
         </div>
       </div>
     </header>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

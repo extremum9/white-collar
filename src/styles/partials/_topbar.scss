@@ -8,9 +8,13 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+      flex-wrap: wrap;
 			gap: toRem(16);
-			min-height: toRem(60);
+			min-height: var(--topbar-head-height);
 			padding-block: toRem(5);
+      @include breakpoint-lg-down {
+        display: none;
+      }
 		}
 	}
 
@@ -46,19 +50,63 @@
 		.container {
 			display: flex;
 			align-items: center;
+      justify-content: space-between;
 			column-gap: toRem(40);
-			min-height: toRem(130);
+			min-height: var(--topbar-body-height);
 			padding-block: toRem(5);
+      @include breakpoint-xl-down {
+        column-gap: toRem(24);
+      }
 		}
 	}
 
-	&-menu {
-		display: contents;
-	}
+  &-brand {
+    flex-shrink: 0;
+    @include breakpoint-lg-down {
+      width: toRem(180);
+    }
+
+    @include breakpoint-sm-down {
+      width: toRem(42);
+      overflow: hidden;
+      img {
+        max-width: unset;
+      }
+    }
+  }
 
 	&-nav {
 		flex-grow: 1;
+    @include breakpoint-lg-down {
+      display: flex;
+      align-items: center;
+      justify-content: safe center;
+      flex-direction: column;
+      position: fixed;
+      inset: var(--topbar-body-height) 0 0;
+      translate: 100% 0;
+      padding: toRem(20);
+      border-block-start: 1px solid var(--paragraph-color);
+      overflow-y: auto;
+      text-align: center;
+      background-color: var(--background-color);
+      transition: translate 0.2s ease-in-out;
+      .menu-open & {
+        translate: 0;
+      }
+    }
 	}
+
+  &-actions {
+    display: flex;
+    align-items: center;
+    gap: toRem(10);
+    @include breakpoint-lg-down {
+      .button {
+        padding: toRem(16) toRem(20);
+      }
+    }
+  }
 }
 
 .nav {
@@ -69,6 +117,14 @@
 		flex-wrap: wrap;
 		gap: toRem(8) toRem(40);
 		color: var(--heading-color);
+    @include breakpoint-xl-down {
+      gap: toRem(8) toRem(24);
+    }
+
+    @include breakpoint-lg-down {
+      flex-direction: column;
+      font-size: var(--text-size-lg);
+    }
 	}
 
 	&-link {
@@ -78,7 +134,7 @@
 			align-items: center;
 			column-gap: toRem(6);
 			svg {
-				margin-top: toRem(2);
+				margin-block-start: toRem(2);
 			}
 		}
 	}

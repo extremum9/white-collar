@@ -1,0 +1,38 @@
+@use "../abstracts" as *;
+
+.hamburger-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: toRem(60);
+  height: toRem(60);
+  padding: toRem(22) toRem(18);
+  color: var(--contrast-color);
+  background-color: var(--secondary-color);
+  transition: background-color 0.2s ease-in-out;
+  @media (any-hover: hover) {
+  	&:hover {
+  		background-color: var(--primary-color);
+  	}
+  }
+
+  .menu-open & {
+    background-color: var(--primary-color);
+  }
+
+  @include breakpoint-lg-up {
+    display: none;
+  }
+
+  &::before, &::after, span {
+    width: 100%;
+    height: toRem(2);
+    border-radius: toRem(2);
+    background-color: currentColor;
+  }
+
+  &::before, &::after {
+    content: '';
+  }
+}

@@ -24,4 +24,11 @@
 
   --container-max-width: #{toRem(1220)};
   --container-padding-x: #{toRem(16)};
+
+  --topbar-head-height: #{toRem(60)};
+  --topbar-body-height: #{toRem(130)};
+
+  @include breakpoint-lg-down {
+    --topbar-body-height: #{toRem(80)};
+  }
 }
