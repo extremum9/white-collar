@@ -104,6 +104,9 @@
     @include breakpoint-lg-down {
       .button {
         padding: toRem(16) toRem(20);
+        @include breakpoint-2xs-down {
+          display: none;
+        }
       }
     }
   }

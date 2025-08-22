@@ -30,6 +30,12 @@
   }
 }
 
+@mixin breakpoint-2xs-up {
+  @media (min-width: toEm(390)) {
+    @content;
+  }
+}
+
 @mixin breakpoint-xl-down {
   @media (max-width: toEm(1199.98)) {
     @content;
@@ -56,6 +62,12 @@
 
 @mixin breakpoint-xs-down {
   @media (max-width: toEm(479.98)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-2xs-down {
+  @media (max-width: toEm(389.98)) {
     @content;
   }
 }
