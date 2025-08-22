@@ -8,6 +8,11 @@ body {
   letter-spacing: toEm(0.32);
   color: var(--paragraph-color);
   background-color: var(--contrast-color);
+  &.prevent-scroll {
+    overflow: hidden;
+    overscroll-behavior: none;
+    touch-action: none;
+  }
 }
 
 main {
