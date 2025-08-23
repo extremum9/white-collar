@@ -55,7 +55,7 @@
 			min-height: var(--topbar-body-height);
 			padding-block: toRem(5);
       @include breakpoint-xl-down {
-        column-gap: toRem(24);
+        column-gap: toRem(16);
       }
 		}
 	}
@@ -103,9 +103,7 @@
     @include breakpoint-lg-down {
       .button {
         padding: toRem(16) toRem(20);
-        @include breakpoint-2xs-down {
-          display: none;
-        }
+        font-size: var(--text-size-sm);
       }
     }
   }
