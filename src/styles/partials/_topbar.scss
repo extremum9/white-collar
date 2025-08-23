@@ -65,7 +65,6 @@
     @include breakpoint-lg-down {
       width: toRem(180);
     }
-
     @include breakpoint-sm-down {
       width: toRem(42);
       overflow: hidden;
@@ -123,7 +122,6 @@
     @include breakpoint-xl-down {
       gap: toRem(8) toRem(24);
     }
-
     @include breakpoint-lg-down {
       flex-direction: column;
       font-size: var(--text-size-lg);
@@ -132,14 +130,6 @@
 
 	&-link {
 		padding-block: toRem(10);
-		&-dropdown {
-			display: inline-flex;
-			align-items: center;
-			column-gap: toRem(6);
-			svg {
-				margin-block-start: toRem(2);
-			}
-		}
 	}
 }
 

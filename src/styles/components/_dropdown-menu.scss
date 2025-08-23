@@ -2,26 +2,37 @@
 
 .dropdown-menu {
 	position: relative;
-	@media (any-hover: hover) {
-		&:hover {
-			> .dropdown-menu-list {
-				display: block;
-			}
-		}
-	}
+  &-toggle {
+    display: inline-flex;
+    align-items: center;
+    column-gap: toRem(6);
+    svg {
+      margin-block-start: toRem(2);
+    }
+  }
 
 	&-list {
 		display: none;
-		position: absolute;
-		top: 100%;
-		left: 0;
-		min-width: toRem(190);
 		padding-block: toRem(10) toRem(15);
 		background-color: var(--background-color);
+    &.open {
+      display: block;
+    }
+
+    @include breakpoint-lg-up {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: toRem(190);
+    }
 	}
 
 	&-link {
 		width: 100%;
 		padding: toRem(10) toRem(20);
+    @include breakpoint-lg-down {
+      justify-content: center;
+      font-size: var(--text-size-md);
+    }
 	}
 }
