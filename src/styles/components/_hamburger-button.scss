@@ -10,11 +10,9 @@
   padding: toRem(22) toRem(18);
   color: var(--contrast-color);
   background-color: var(--secondary-color);
-  transition: background-color 0.2s ease-in-out;
-  @media (any-hover: hover) {
-  	&:hover {
-  		background-color: var(--primary-color);
-  	}
+  transition-property: background-color;
+  @include hover {
+    background-color: var(--primary-color);
   }
 
   .menu-open & {

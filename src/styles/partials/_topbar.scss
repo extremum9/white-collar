@@ -37,12 +37,9 @@
 		}
 
 		&-item-link {
-			transition: color 0.2s ease-in-out;
-			@media (any-hover: hover) {
-				&:hover {
-					color: var(--primary-color);
-				}
-			}
+      @include hover {
+        color: var(--primary-color);
+      }
 		}
 	}
 
@@ -89,7 +86,7 @@
       overflow-y: auto;
       text-align: center;
       background-color: var(--background-color);
-      transition: translate 0.2s ease-in-out;
+      transition: translate var(--transition-duration) var(--transition-timing-function);
       .menu-open & {
         translate: 0;
       }
@@ -133,12 +130,9 @@
 
 .nav-link,
 .dropdown-menu-link {
-	transition: color 0.2s ease-in-out;
-	@media (any-hover: hover) {
-		&:hover {
-			color: var(--secondary-color);
-		}
-	}
+  @include hover {
+    color: var(--secondary-color);
+  }
 
 	&.current {
 		color: var(--secondary-color);

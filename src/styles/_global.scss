@@ -18,3 +18,12 @@ body {
 main {
   flex-grow: 1;
 }
+
+button, a {
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+a {
+  transition-property: color;
+}

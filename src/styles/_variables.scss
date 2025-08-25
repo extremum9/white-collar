@@ -7,6 +7,7 @@
   --heading-color: #37393f;
   --paragraph-color: #7d7d7d;
   --background-color: #f4f4f4;
+  --divider-color: #6c6d72;
 
   --font-family-primary: "Inter", sans-serif;
   --font-family-secondary: "Poppins", sans-serif;
@@ -21,6 +22,9 @@
   --text-size-3xl: #{toRem(35)};
   --text-size-4xl: #{toRem(40)};
   --text-size-5xl: #{toRem(60)};
+
+  --transition-duration: 0.2s;
+  --transition-timing-function: ease-in-out;
 
   --container-max-width: #{toRem(1220)};
   --container-padding-x: #{toRem(16)};

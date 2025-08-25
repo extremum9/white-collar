@@ -6,11 +6,8 @@
 	gap: toRem(16);
 	a {
 		vertical-align: middle;
-		transition: color 0.2s ease-in-out;
-		@media (any-hover: hover) {
-			&:hover {
-				color: var(--primary-color);
-			}
-		}
+    @include hover {
+      color: var(--primary-color);
+    }
 	}
 }
