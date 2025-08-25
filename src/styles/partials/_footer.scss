@@ -92,4 +92,27 @@
       margin-block-end: toRem(16);
     }
   }
+
+  &-tail {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: toRem(1);
+  }
+
+  &-copyright {
+    a {
+      font-weight: 500;
+      color: var(--primary-color);
+      @include hover {
+        color: var(--secondary-color)
+      }
+    }
+  }
+
+  &-social {
+    display: flex;
+    align-items: start;
+    gap: toRem(12);
+  }
 }
