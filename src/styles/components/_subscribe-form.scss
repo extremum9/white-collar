@@ -1,0 +1,8 @@
+@use "../abstracts" as *;
+
+.subscribe-form {
+  display: flex;
+  &-button {
+    padding: toRem(20);
+  }
+}

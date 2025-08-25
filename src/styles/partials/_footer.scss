@@ -1,11 +1,8 @@
 @use "../abstracts" as *;
 
 .footer {
+  color: var(--contrast-color);
   background-color: var(--heading-color);
-  .heading-6 {
-    color: var(--contrast-color);
-  }
-
   .container {
     padding-block: toRem(95);
   }
@@ -15,6 +12,7 @@
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-items: start;
+    gap: toRem(16);
     margin-block-end: toRem(50);
   }
 
@@ -49,16 +47,49 @@
 
     &-caption {
       margin-block-end: toRem(5);
-    }
-
-    &-text {
       color: var(--contrast-color);
     }
   }
 
   &-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2.5fr;
+    align-items: start;
+    gap: toRem(30);
     margin-block-end: toRem(25);
     padding-block: toRem(50);
     border-block: 1px solid var(--divider-color);
+  }
+
+  &-nav {
+    display: contents;
+    &-list {
+      display: contents;
+    }
+
+    &-title {
+      margin-block-end: toRem(20);
+      color: var(--primary-color);
+    }
+
+    &-link {
+      padding-block: toRem(8);
+      @include hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  &-subscribe {
+    padding: toRem(42) toRem(36);
+    background-color: #474950;
+    &-title {
+      margin-block-end: toRem(10);
+      color: var(--contrast-color);
+    }
+
+    &-text {
+      margin-block-end: toRem(16);
+    }
   }
 }
