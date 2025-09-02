@@ -2,6 +2,11 @@
 
 .subscribe-form {
   display: flex;
+  row-gap: toRem(10);
+  @include breakpoint-2xs-down {
+    flex-direction: column;
+  }
+
   &-button {
     padding: toRem(20);
   }

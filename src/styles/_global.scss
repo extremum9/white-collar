@@ -3,6 +3,7 @@
 body {
   display: flex;
   flex-direction: column;
+  min-width: toRem(320);
   font-family: var(--font-family-primary);
   font-size: var(--text-size-base);
   letter-spacing: toEm(0.32);
