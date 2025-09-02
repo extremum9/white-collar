@@ -13,6 +13,9 @@
 			min-height: var(--topbar-head-height);
 			padding-block: toRem(5);
       @include breakpoint-lg-down {
+        flex-direction: column;
+      }
+      @include breakpoint-md-down {
         display: none;
       }
 		}
@@ -79,7 +82,7 @@
       justify-content: safe center;
       flex-direction: column;
       position: fixed;
-      inset: var(--topbar-body-height) 0 0;
+      inset: calc(var(--topbar-body-height) + var(--topbar-head-height)) 0 0;
       translate: 100% 0;
       padding: toRem(20);
       border-block-start: 1px solid var(--paragraph-color);
@@ -90,6 +93,9 @@
       .menu-open & {
         translate: 0;
       }
+    }
+    @include breakpoint-md-down {
+      inset: var(--topbar-body-height) 0 0;
     }
 	}
 

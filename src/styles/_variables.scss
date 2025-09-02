@@ -33,6 +33,7 @@
   --topbar-body-height: #{toRem(130)};
 
   @include breakpoint-lg-down {
+    --topbar-head-height: #{toRem(80)};
     --topbar-body-height: #{toRem(80)};
   }
 }
