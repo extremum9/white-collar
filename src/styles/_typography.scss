@@ -37,8 +37,19 @@ h6,
 
 h1,
 .heading-1 {
-	font-size: var(--text-size-5xl);
+	font-size: var(--text-size-6xl);
 	line-height: 1.1;
+	@include breakpoint-xl-down {
+		font-size: var(--text-size-5xl);
+	}
+
+	@include breakpoint-md-down {
+		font-size: var(--text-size-4xl);
+	}
+
+	@include breakpoint-xs-down {
+		font-size: var(--text-size-3xl);
+	}
 }
 
 h2,
@@ -65,12 +76,15 @@ h5,
 h6,
 .heading-6 {
 	font-size: var(--text-size-md);
-  @include breakpoint-xs-down {
-    font-size: var(--text-size-base);
-  }
+	@include breakpoint-xs-down {
+		font-size: var(--text-size-base);
+	}
 }
 
 .subheading {
 	font-weight: 500;
 	color: var(--heading-color);
+	@include breakpoint-xs-down {
+		font-size: var(--text-size-sm);
+	}
 }

@@ -1,0 +1,64 @@
+@use "../abstracts" as *;
+
+.hero {
+	display: grid;
+	grid-template-columns: 0.8fr 1fr;
+	background: url("/images/hero-image.jpg") center / cover no-repeat;
+	background-color: var(--heading-color);
+	@include breakpoint-xxl-down {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@include breakpoint-lg-down {
+		grid-template-columns: 1fr;
+	}
+
+	&-content {
+		padding: toRem(140) toRem(60);
+		backdrop-filter: blur(toRem(9.5));
+		background-color: rgba(55, 57, 63, 0.91);
+		@include breakpoint-xxl-down {
+			padding: toRem(120) toRem(30);
+		}
+
+		@include breakpoint-xl-down {
+			padding: toRem(100) toRem(30);
+		}
+
+		@include breakpoint-md-down {
+			padding: toRem(80) toRem(30);
+		}
+
+		@include breakpoint-sm-down {
+			padding: toRem(50) var(--container-padding-x);
+		}
+	}
+
+	&-title,
+	&-subtitle {
+		color: var(--contrast-color);
+	}
+
+	&-title span {
+		color: var(--primary-color);
+	}
+
+	&-text {
+		margin-block-end: toRem(35);
+		font-weight: 500;
+		color: #b9b9b9;
+		@include breakpoint-xs-down {
+			margin-block-end: toRem(20);
+		}
+	}
+
+	&-buttons {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: toRem(30);
+		@include breakpoint-sm-down {
+			gap: toRem(16);
+		}
+	}
+}

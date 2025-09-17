@@ -21,7 +21,11 @@
   --text-size-2xl: #{toRem(30)};
   --text-size-3xl: #{toRem(35)};
   --text-size-4xl: #{toRem(40)};
-  --text-size-5xl: #{toRem(60)};
+  --text-size-5xl: #{toRem(48)};
+  --text-size-6xl: #{toRem(60)};
+
+  --topbar-zindex: 1045;
+  --dropdown-zindex: 1000;
 
   --transition-duration: 0.2s;
   --transition-timing-function: ease-in-out;

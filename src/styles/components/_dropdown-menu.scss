@@ -1,7 +1,8 @@
 @use "../abstracts" as *;
 
 .dropdown-menu {
-	position: relative;
+  position: relative;
+  z-index: var(--dropdown-zindex);
   &-toggle {
     display: inline-flex;
     align-items: center;
@@ -11,10 +12,10 @@
     }
   }
 
-	&-list {
-		display: none;
-		padding-block: toRem(10) toRem(15);
-		background-color: var(--background-color);
+  &-list {
+    display: none;
+    padding-block: toRem(10) toRem(15);
+    background-color: var(--background-color);
     &.open {
       display: block;
     }
@@ -25,14 +26,14 @@
       left: 0;
       min-width: toRem(190);
     }
-	}
+  }
 
-	&-link {
-		width: 100%;
-		padding: toRem(10) toRem(20);
+  &-link {
+    width: 100%;
+    padding: toRem(10) toRem(20);
     @include breakpoint-lg-down {
       justify-content: center;
       font-size: var(--text-size-md);
     }
-	}
+  }
 }

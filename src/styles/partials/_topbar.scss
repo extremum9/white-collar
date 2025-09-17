@@ -1,64 +1,66 @@
 @use "../abstracts" as *;
 
 .topbar {
-	&-head {
-		color: var(--contrast-color);
-		background-color: var(--heading-color);
-		.container {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
+  position: relative;
+  z-index: var(--topbar-zindex);
+  &-head {
+    color: var(--contrast-color);
+    background-color: var(--heading-color);
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       flex-wrap: wrap;
-			gap: toRem(16);
-			min-height: var(--topbar-head-height);
-			padding-block: toRem(5);
+      gap: toRem(16);
+      min-height: var(--topbar-head-height);
+      padding-block: toRem(5);
       @include breakpoint-lg-down {
         flex-direction: column;
       }
       @include breakpoint-md-down {
         display: none;
       }
-		}
-	}
+    }
+  }
 
-	&-address,
-	&-contacts {
-		display: flex;
-		align-items: center;
-		gap: toRem(30);
-	}
+  &-address,
+  &-contacts {
+    display: flex;
+    align-items: center;
+    gap: toRem(30);
+  }
 
-	&-address {
-		&-item {
-			display: inline-flex;
-			align-items: center;
-			column-gap: toRem(10);
-			font-size: var(--text-size-xs);
-			svg {
-				color: var(--primary-color);
-			}
-		}
+  &-address {
+    &-item {
+      display: inline-flex;
+      align-items: center;
+      column-gap: toRem(10);
+      font-size: var(--text-size-xs);
+      svg {
+        color: var(--primary-color);
+      }
+    }
 
-		&-item-link {
+    &-item-link {
       @include hover {
         color: var(--primary-color);
       }
-		}
-	}
+    }
+  }
 
-	&-body {
-		.container {
-			display: flex;
-			align-items: center;
+  &-body {
+    .container {
+      display: flex;
+      align-items: center;
       justify-content: space-between;
-			column-gap: toRem(40);
-			min-height: var(--topbar-body-height);
-			padding-block: toRem(5);
+      column-gap: toRem(40);
+      min-height: var(--topbar-body-height);
+      padding-block: toRem(5);
       @include breakpoint-xl-down {
         column-gap: toRem(16);
       }
-		}
-	}
+    }
+  }
 
   &-brand {
     flex-shrink: 0;
@@ -74,8 +76,8 @@
     }
   }
 
-	&-nav {
-		flex-grow: 1;
+  &-nav {
+    flex-grow: 1;
     @include breakpoint-lg-down {
       display: flex;
       align-items: center;
@@ -97,7 +99,7 @@
     @include breakpoint-md-down {
       inset: var(--topbar-body-height) 0 0;
     }
-	}
+  }
 
   &-actions {
     display: flex;
@@ -113,13 +115,13 @@
 }
 
 .nav {
-	&-list {
-		display: flex;
-		align-items: center;
-		justify-content: end;
-		flex-wrap: wrap;
-		gap: toRem(8) toRem(40);
-		color: var(--heading-color);
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: toRem(8) toRem(40);
+    color: var(--heading-color);
     @include breakpoint-xl-down {
       gap: toRem(8) toRem(24);
     }
@@ -127,11 +129,11 @@
       flex-direction: column;
       font-size: var(--text-size-lg);
     }
-	}
+  }
 
-	&-link {
-		padding-block: toRem(10);
-	}
+  &-link {
+    padding-block: toRem(10);
+  }
 }
 
 .nav-link,
@@ -140,8 +142,8 @@
     color: var(--secondary-color);
   }
 
-	&.current {
-		color: var(--secondary-color);
-		pointer-events: none;
-	}
+  &.current {
+    color: var(--secondary-color);
+    pointer-events: none;
+  }
 }

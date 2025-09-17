@@ -38,4 +38,8 @@
 	<symbol id="arrow-down" fill="none" viewBox="0 0 10 7">
 		<path d="M1 1.5L5 5.5L9 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 	</symbol>
+
+	<symbol id="play" viewBox="0 0 13 21">
+		<path fill="currentColor" d="M2.43967 20.143L12.4841 11.6113C12.6459 11.4738 12.7758 11.3032 12.8648 11.1112C12.9539 10.9193 13 10.7105 13 10.4992C13 10.2879 12.9539 10.0791 12.8648 9.88717C12.7758 9.69522 12.6459 9.52462 12.4841 9.3871L2.43967 0.855357C1.48092 0.0411243 0 0.716193 0 1.96745V19.0334C0 20.2846 1.48092 20.9597 2.43967 20.143Z" />
+	</symbol>
 </svg>

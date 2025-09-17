@@ -10,6 +10,10 @@
 }
 
 .section-head {
+  &:not(:last-child) {
+    margin-block-end: toRem(20);
+  }
+
   .subheading {
     margin-block-end: toRem(16);
   }
@@ -17,13 +21,13 @@
 
 .box {
   display: inline-flex;
+  align-items: center;
   column-gap: toRem(6);
   &::before {
     content: "";
     width: toRem(12);
     height: toRem(12);
     flex: 0 0 toRem(12);
-    margin-block-start: toRem(8);
   }
 
   &-primary::before {
