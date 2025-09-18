@@ -1,7 +1,10 @@
+import { toEm } from "./utilities.js";
+
 const initTopbar = () => {
   const selectors = {
     hamburgerButton: ".js-hamburger-button",
   };
+
   const stateClasses = {
     preventScroll: "prevent-scroll",
     menuOpen: "menu-open",
@@ -9,7 +12,7 @@ const initTopbar = () => {
 
   const body = document.body;
   const hamburgerButton = document.querySelector(selectors.hamburgerButton);
-  const tabletMediaQuery = window.matchMedia("(max-width: 61.99875em)");
+  const tabletMediaQuery = window.matchMedia(`(max-width: ${toEm(991.98)})`);
 
   const toggleMenu = () => {
     body.classList.toggle(stateClasses.preventScroll);

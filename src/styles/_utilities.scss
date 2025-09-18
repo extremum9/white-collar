@@ -38,3 +38,45 @@
     background-color: var(--secondary-color);
   }
 }
+
+.link-cta {
+  font-weight: 600;
+  &-primary {
+    color: var(--primary-color);
+  }
+
+  &-secondary {
+    color: var(--secondary-color);
+  }
+
+  &-dark {
+    color: var(--heading-color);
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+  }
+
+  &-underline {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: toRem(2);
+      background-color: currentColor;
+      transition: width var(--transition-duration) var(--transition-timing-function);
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        &::before {
+          width: 0;
+        }
+      }
+    }
+  }
+}

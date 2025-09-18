@@ -13,7 +13,7 @@
 		grid-template-columns: 1fr;
 	}
 
-	&-content {
+	&-body {
 		padding: toRem(140) toRem(60);
 		backdrop-filter: blur(toRem(9.5));
 		background-color: rgba(55, 57, 63, 0.91);
@@ -43,7 +43,7 @@
 		color: var(--primary-color);
 	}
 
-	&-text {
+	&-description {
 		margin-block-end: toRem(35);
 		font-weight: 500;
 		color: #b9b9b9;
@@ -52,7 +52,7 @@
 		}
 	}
 
-	&-buttons {
+	&-actions {
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;

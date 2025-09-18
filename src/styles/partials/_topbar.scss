@@ -17,6 +17,7 @@
       @include breakpoint-lg-down {
         flex-direction: column;
       }
+
       @include breakpoint-md-down {
         display: none;
       }
@@ -67,6 +68,7 @@
     @include breakpoint-lg-down {
       width: toRem(180);
     }
+
     @include breakpoint-sm-down {
       width: toRem(42);
       overflow: hidden;
@@ -96,6 +98,7 @@
         translate: 0;
       }
     }
+
     @include breakpoint-md-down {
       inset: var(--topbar-body-height) 0 0;
     }
@@ -125,6 +128,7 @@
     @include breakpoint-xl-down {
       gap: toRem(8) toRem(24);
     }
+
     @include breakpoint-lg-down {
       flex-direction: column;
       font-size: var(--text-size-lg);
