@@ -1,10 +1,10 @@
-import {sync} from 'glob'
+import { sync } from "glob";
 
 export default {
-	build: {
-		emptyOutDir: true,
-		rollupOptions: {
-			input: sync('./*.html'.replace(/\\/g, '/'))
-		}
-	}
+  build: {
+    emptyOutDir: true,
+    rollupOptions: {
+      input: sync("./*.html".replace(/\\/g, "/")),
+    },
+  },
 };

@@ -6,8 +6,8 @@
 	gap: toRem(16);
 	a {
 		vertical-align: middle;
-    @include hover {
-      color: var(--primary-color);
-    }
+		@include hover {
+			color: var(--primary-color);
+		}
 	}
 }

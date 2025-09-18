@@ -23,14 +23,17 @@
     display: none;
   }
 
-  &::before, &::after, span {
+  &::before,
+  &::after,
+  span {
     width: 100%;
     height: toRem(2);
     border-radius: toRem(2);
     background-color: currentColor;
   }
 
-  &::before, &::after {
-    content: '';
+  &::before,
+  &::after {
+    content: "";
   }
 }
