@@ -1,0 +1,18 @@
+@use "../abstracts" as *;
+
+.points {
+	display: grid;
+	row-gap: toRem(30);
+}
+
+.point {
+	&-item {
+		min-height: toRem(27);
+		padding-inline-start: toRem(35);
+		background: url("/icons/tick-circle-blue.svg") no-repeat;
+	}
+
+	&-title {
+		font-weight: 400;
+	}
+}

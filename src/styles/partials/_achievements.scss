@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+.achievements {
+	display: flex;
+	gap: toRem(20);
+}
+
+.achievement {
+	&-item {
+		flex-basis: 50%;
+		padding: toRem(30) toRem(30) toRem(30) toRem(80);
+		border: 1px solid #e3e3e3;
+		background: no-repeat toRem(30) toRem(30);
+	}
+
+	&-title {
+		margin-block-end: toRem(8);
+	}
+
+	&-description {
+		font-size: var(--text-size-sm);
+	}
+}

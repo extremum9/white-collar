@@ -1,16 +1,18 @@
 @use "../abstracts" as *;
 
 .hero {
-	display: grid;
-	grid-template-columns: 0.8fr 1fr;
-	background: url("/images/hero-image.jpg") center / cover no-repeat;
-	background-color: var(--heading-color);
-	@include breakpoint-xxl-down {
-		grid-template-columns: repeat(2, 1fr);
-	}
+	&-section {
+		display: grid;
+		grid-template-columns: 0.8fr 1fr;
+		background: url("/images/hero-image.jpg") center / cover no-repeat;
+		background-color: var(--heading-color);
+		@include breakpoint-xxl-down {
+			grid-template-columns: repeat(2, 1fr);
+		}
 
-	@include breakpoint-lg-down {
-		grid-template-columns: 1fr;
+		@include breakpoint-lg-down {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	&-body {

@@ -20,6 +20,10 @@ main {
   flex-grow: 1;
 }
 
+p {
+  --paragraph-margin-bottom: #{toRem(10)};
+}
+
 button,
 a {
   transition-duration: var(--transition-duration);
