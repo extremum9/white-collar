@@ -56,6 +56,13 @@ h2,
 .heading-2 {
 	font-size: var(--text-size-4xl);
 	line-height: 1.2;
+	@include breakpoint-lg-down {
+		font-size: var(--text-size-3xl);
+	}
+
+	@include breakpoint-xs-down {
+		font-size: var(--text-size-2xl);
+	}
 }
 
 h3,

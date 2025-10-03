@@ -68,6 +68,7 @@
       width: 100%;
       height: toRem(2);
       background-color: currentColor;
+      pointer-events: none;
       transition: width var(--transition-duration) var(--transition-timing-function);
     }
 
