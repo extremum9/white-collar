@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+.companies-section {
+	padding-block: toRem(100) toRem(80);
+	@include breakpoint-xl-down {
+		padding-block: toRem(40);
+	}
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		gap: toRem(30);
+		@include breakpoint-xs-down {
+			flex-direction: column;
+		}
+	}
+}
