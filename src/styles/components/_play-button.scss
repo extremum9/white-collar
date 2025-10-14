@@ -5,15 +5,13 @@
 	align-items: center;
 	gap: toRem(10);
 	color: var(--contrast-color);
-	@media (any-hover: hover) {
-		&:hover {
-			.play-button-icon {
-				background-color: var(--primary-color);
-			}
+	@include hover {
+		.play-button-icon {
+			background-color: var(--primary-color);
+		}
 
-			.play-button-text {
-				color: var(--primary-color);
-			}
+		.play-button-text {
+			color: var(--primary-color);
 		}
 	}
 

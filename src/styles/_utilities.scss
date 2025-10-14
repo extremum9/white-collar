@@ -9,9 +9,24 @@
   @include visually-hidden;
 }
 
+.stretched-link {
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+}
+
 .section-head {
   &:not(:last-child) {
     margin-block-end: toRem(20);
+  }
+
+  &-center {
+    max-width: toRem(800);
+    margin-inline: auto;
+    text-align: center;
   }
 
   .subheading {
@@ -47,14 +62,15 @@
 
   &-secondary {
     color: var(--secondary-color);
+    @include hover {
+      color: var(--heading-color);
+    }
   }
 
   &-dark {
     color: var(--heading-color);
-    @media (any-hover: hover) {
-      &:hover {
-        color: var(--secondary-color);
-      }
+    @include hover {
+      color: var(--secondary-color);
     }
   }
 
@@ -72,11 +88,9 @@
       transition: width var(--transition-duration) var(--transition-timing-function);
     }
 
-    @media (any-hover: hover) {
-      &:hover {
-        &::before {
-          width: 0;
-        }
+    @include hover {
+      &::before {
+        width: 0;
       }
     }
   }

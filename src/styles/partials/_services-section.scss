@@ -1,0 +1,70 @@
+@use "../abstracts" as *;
+
+.services {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: toRem(30);
+	&-section {
+		padding-block-end: toRem(130);
+		.section-head {
+			margin-block-end: toRem(40);
+		}
+	}
+}
+
+.service-item,
+.service-more-item-link {
+	padding: toRem(30);
+}
+
+.service-item {
+	display: flex;
+	align-items: start;
+	gap: toRem(20);
+	position: relative;
+	background-color: var(--background-color);
+	@include hover {
+		.service-item {
+			&-title {
+				color: var(--secondary-color);
+			}
+
+			&-icon {
+				background-color: var(--secondary-color);
+			}
+		}
+	}
+
+	&-title {
+		margin-block-end: toRem(28);
+		transition: color var(--transition-duration) var(--transition-timing-function);
+	}
+
+	&-link {
+		color: var(--secondary-color);
+	}
+
+	&-icon {
+		display: grid;
+		place-content: center;
+		flex-shrink: 0;
+		width: toRem(72);
+		height: toRem(72);
+		border-radius: 50%;
+		background-color: var(--primary-color);
+		transition: background-color var(--transition-duration) var(--transition-timing-function);
+	}
+}
+
+.service-more-item-link {
+	display: grid;
+	place-content: center;
+	border: 2px solid var(--secondary-color);
+	color: var(--contrast-color);
+	background-color: var(--secondary-color);
+	transition-property: color, background-color;
+	@include hover {
+		color: var(--secondary-color);
+		background-color: transparent;
+	}
+}
