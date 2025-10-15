@@ -2,7 +2,7 @@
 
 .services {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(auto-fill, minmax(min(toRem(350), 100%), 1fr));
 	gap: toRem(30);
 	&-section {
 		padding-block-end: toRem(130);
@@ -15,11 +15,15 @@
 .service-item,
 .service-more-item-link {
 	padding: toRem(30);
+	@include breakpoint-xs-down {
+		padding: toRem(20);
+	}
 }
 
 .service-item {
 	display: flex;
 	align-items: start;
+	justify-content: space-between;
 	gap: toRem(20);
 	position: relative;
 	background-color: var(--background-color);
@@ -35,9 +39,16 @@
 		}
 	}
 
+	@include breakpoint-xs-down {
+		flex-direction: column-reverse;
+	}
+
 	&-title {
 		margin-block-end: toRem(28);
 		transition: color var(--transition-duration) var(--transition-timing-function);
+		@include breakpoint-xs-down {
+			margin-block-end: toRem(10);
+		}
 	}
 
 	&-link {
@@ -66,5 +77,9 @@
 	@include hover {
 		color: var(--secondary-color);
 		background-color: transparent;
+	}
+
+	@include breakpoint-xs-down {
+		font-size: toRem(20);
 	}
 }
