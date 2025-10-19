@@ -3,7 +3,7 @@
 .companies-section {
 	padding-block: toRem(100) toRem(80);
 	@include breakpoint-xl-down {
-		padding-block: toRem(40);
+		padding-block: toRem(60);
 	}
 
 	.container {

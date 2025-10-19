@@ -17,6 +17,14 @@
 		}
 
 		@include breakpoint-xl-down {
+			padding: toRem(80) toRem(40);
+		}
+
+		@include breakpoint-lg-down {
+			padding: toRem(80) toRem(30);
+		}
+
+		@include breakpoint-md-down {
 			padding: toRem(40) var(--container-padding-x);
 		}
 
@@ -37,6 +45,14 @@
 		}
 
 		@include breakpoint-xl-down {
+			padding: toRem(80) toRem(40);
+		}
+
+		@include breakpoint-lg-down {
+			padding: toRem(80) toRem(30);
+		}
+
+		@include breakpoint-md-down {
 			padding: toRem(40) var(--container-padding-x);
 		}
 
@@ -59,7 +75,7 @@
 	}
 
 	&-achievements {
-		@include breakpoint-lg-down {
+		@include breakpoint-xl-down {
 			flex-direction: column;
 		}
 	}
