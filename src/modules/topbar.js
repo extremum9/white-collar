@@ -4,7 +4,6 @@ const initTopbar = () => {
   const selectors = {
     hamburgerButton: ".js-hamburger-button",
   };
-
   const stateClasses = {
     preventScroll: "prevent-scroll",
     menuOpen: "menu-open",

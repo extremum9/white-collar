@@ -25,8 +25,17 @@
 
 	&-item {
 		width: 100%;
+		overflow: hidden;
+		@include hover {
+			img {
+				scale: 1.1;
+			}
+		}
+
 		img {
 			width: 100%;
+			scale: 1.01;
+			transition: scale var(--transition-duration) var(--transition-timing-function);
 		}
 	}
 }
