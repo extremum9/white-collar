@@ -1,0 +1,22 @@
+@use "../abstracts" as *;
+
+.home-why-choose {
+	&-section {
+		padding-block: toRem(110) toRem(80);
+		color: var(--contrast-color);
+		background: url("/images/why-choose-image.jpg") 100% / auto no-repeat;
+		background-color: var(--heading-color);
+		.section-head {
+			max-width: toRem(600);
+			margin-block-end: toRem(45);
+		}
+	}
+
+	&-body {
+		max-width: toRem(680);
+	}
+
+	&-progress {
+		display: none;
+	}
+}

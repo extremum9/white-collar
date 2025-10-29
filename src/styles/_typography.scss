@@ -90,11 +90,3 @@ h6,
 		font-size: var(--text-size-base);
 	}
 }
-
-.subheading {
-	font-weight: 500;
-	color: var(--heading-color);
-	@include breakpoint-xs-down {
-		font-size: var(--text-size-sm);
-	}
-}

@@ -23,14 +23,33 @@
     margin-block-end: toRem(20);
   }
 
+  &-light {
+    color: var(--contrast-color);
+    .section-head {
+      &-subtitle,
+      &-title {
+        color: var(--contrast-color);
+      }
+    }
+  }
+
   &-center {
     max-width: toRem(800);
     margin-inline: auto;
     text-align: center;
   }
 
-  .subheading {
+  &-subtitle {
     margin-block-end: toRem(16);
+    font-weight: 500;
+    color: var(--heading-color);
+    @include breakpoint-xs-down {
+      font-size: var(--text-size-sm);
+    }
+  }
+
+  &-title {
+    margin-block-end: toRem(20);
   }
 }
 
