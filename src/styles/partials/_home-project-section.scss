@@ -3,6 +3,14 @@
 .home-project {
 	&-section {
 		padding-block: toRem(140);
+		@include breakpoint-xl-down {
+			padding-block: toRem(80);
+		}
+
+		@include breakpoint-md-down {
+			padding-block: toRem(40);
+		}
+
 		.container {
 			display: flex;
 			align-items: center;

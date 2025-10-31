@@ -6,6 +6,10 @@
 		padding-block: toRem(60);
 	}
 
+	@include breakpoint-md-down {
+		padding-block: toRem(20) toRem(60);
+	}
+
 	.container {
 		display: flex;
 		align-items: center;

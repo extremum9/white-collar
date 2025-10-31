@@ -6,6 +6,10 @@
 	gap: toRem(12);
 	padding: toRem(27) toRem(30);
 	background-color: #2e2f34;
+	@include breakpoint-xs-down {
+		padding: toRem(20);
+	}
+
 	&-subtitle {
 		margin-block-end: toRem(5);
 		font-size: var(--text-size-sm);

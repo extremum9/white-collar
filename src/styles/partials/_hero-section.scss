@@ -6,7 +6,7 @@
 		grid-template-columns: 0.8fr 1fr;
 		background: url("/images/hero-image.jpg") center / cover no-repeat;
 		background-color: var(--heading-color);
-		@include breakpoint-xxl-down {
+		@include breakpoint-2xl-down {
 			grid-template-columns: repeat(2, 1fr);
 		}
 
@@ -23,7 +23,7 @@
 		padding: toRem(140) toRem(60);
 		backdrop-filter: blur(toRem(9.5));
 		background-color: rgba(55, 57, 63, 0.91);
-		@include breakpoint-xxl-down {
+		@include breakpoint-2xl-down {
 			padding: toRem(120) toRem(30);
 		}
 

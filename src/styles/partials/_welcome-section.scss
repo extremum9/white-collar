@@ -4,6 +4,10 @@
 	&-section {
 		display: grid;
 		grid-template-columns: 0.8fr 1fr;
+		@include breakpoint-2xl-down {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
 		@include breakpoint-md-down {
 			grid-template-columns: 1fr;
 		}
@@ -12,8 +16,8 @@
 	&-intro {
 		padding: toRem(140) toRem(60) toRem(140) toRem(310);
 		background-color: var(--background-color);
-		@include breakpoint-xxl-down {
-			padding: toRem(100) toRem(60) toRem(100) toRem(100);
+		@include breakpoint-2xl-down {
+			padding: toRem(100) toRem(60) toRem(100) toRem(200);
 		}
 
 		@include breakpoint-xl-down {
@@ -40,7 +44,7 @@
 
 	&-body {
 		padding: toRem(140) toRem(270) toRem(140) toRem(40);
-		@include breakpoint-xxl-down {
+		@include breakpoint-2xl-down {
 			padding: toRem(100) toRem(40);
 		}
 
@@ -75,8 +79,8 @@
 	}
 
 	&-achievements {
-		@include breakpoint-xl-down {
-			flex-direction: column;
-		}
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+		gap: toRem(20);
 	}
 }

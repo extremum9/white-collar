@@ -75,6 +75,13 @@
 
 .link-cta {
   font-weight: 600;
+  &-primary,
+  &-dark {
+    @include hover {
+      color: var(--secondary-color);
+    }
+  }
+
   &-primary {
     color: var(--primary-color);
   }
@@ -88,9 +95,6 @@
 
   &-dark {
     color: var(--heading-color);
-    @include hover {
-      color: var(--secondary-color);
-    }
   }
 
   &-underline {

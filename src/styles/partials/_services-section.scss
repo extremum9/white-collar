@@ -6,6 +6,14 @@
 	gap: toRem(30);
 	&-section {
 		padding-block-end: toRem(130);
+		@include breakpoint-lg-down {
+			padding-block-end: toRem(80);
+		}
+
+		@include breakpoint-md-down {
+			padding-block-end: toRem(40);
+		}
+
 		.section-head {
 			margin-block-end: toRem(40);
 		}
