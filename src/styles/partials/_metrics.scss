@@ -13,14 +13,12 @@
 		font-family: var(--font-family-secondary);
 		font-size: var(--text-size-md);
 		background: url("/icons/tick-circle-green.svg") no-repeat;
-		.link-cta {
-			font-size: var(--text-size-base);
-		}
 	}
 
 	&-rating {
 		display: flex;
 		align-items: center;
 		column-gap: toRem(4);
+		color: #ffb342;
 	}
 }

@@ -17,6 +17,15 @@
 	}
 
 	&-progress {
-		display: none;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: toRem(15);
+		margin-block-end: toRem(35);
+	}
+
+	&-metrics {
+		.link-cta {
+			justify-self: start;
+		}
 	}
 }

@@ -1,0 +1,18 @@
+@use "../abstracts" as *;
+
+.progress-item {
+	display: flex;
+	align-items: center;
+	gap: toRem(12);
+	padding: toRem(27) toRem(30);
+	background-color: #2e2f34;
+	&-subtitle {
+		margin-block-end: toRem(5);
+		font-size: var(--text-size-sm);
+	}
+
+	&-title {
+		font-size: var(--text-size-base);
+		color: var(--contrast-color);
+	}
+}
