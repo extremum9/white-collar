@@ -98,23 +98,7 @@
   }
 
   &-underline {
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      height: toRem(2);
-      background-color: currentColor;
-      pointer-events: none;
-      transition: width var(--transition-duration) var(--transition-timing-function);
-    }
-
-    @include hover {
-      &::before {
-        width: 0;
-      }
-    }
+    text-decoration: underline;
+    text-underline-offset: toRem(6);
   }
 }
