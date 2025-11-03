@@ -1,0 +1,38 @@
+@use "../abstracts" as *;
+
+.testimonial-card {
+	padding: toRem(40) toRem(35);
+	background-color: var(--background-color);
+	&-head {
+		display: flex;
+		align-items: center;
+		gap: toRem(20);
+		margin-block-end: toRem(35);
+	}
+
+	&-avatar {
+		flex-shrink: 0;
+		overflow: hidden;
+		border-radius: 50%;
+	}
+
+	&-info {
+		display: grid;
+		row-gap: toRem(2);
+	}
+
+	&-position {
+		font-size: var(--text-size-sm);
+	}
+
+	&-rating {
+		display: flex;
+		align-items: center;
+		gap: toRem(5);
+	}
+
+	&-quote {
+		font-size: var(--text-size-md);
+		font-style: italic;
+	}
+}

@@ -1,0 +1,18 @@
+@use "../abstracts" as *;
+
+.testimonials {
+	&-section {
+		.container {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			align-items: start;
+			gap: toRem(16) toRem(38);
+			padding-block: toRem(140);
+			border-block-start: 1px solid #c5c5c5;
+		}
+	}
+
+	&-list {
+		display: contents;
+	}
+}
