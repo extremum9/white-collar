@@ -49,7 +49,9 @@
   }
 
   &-title {
-    margin-block-end: toRem(20);
+    &:not(:last-child) {
+      margin-block-end: toRem(20);
+    }
   }
 }
 
