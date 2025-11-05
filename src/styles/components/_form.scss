@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+.form {
+	&-row {
+		display: flex;
+		align-items: center;
+		gap: toRem(10);
+	}
+}

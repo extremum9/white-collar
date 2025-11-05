@@ -687,14 +687,14 @@
                 height="128"
                 aria-hidden="true"
               >
-                <circle r="46" cx="50" cy="50" fill="none" stroke-width="3" />
+                <circle r="46" cx="50" cy="50" fill="none" stroke-width="2" />
                 <circle
                   r="46"
                   cx="50"
                   cy="50"
                   fill="none"
                   stroke="var(--secondary-color)"
-                  stroke-width="3"
+                  stroke-width="2"
                   stroke-linecap="round"
                 />
                 <text
@@ -728,27 +728,33 @@
               </p>
             </div>
 
-            <ul class="work-points" role="list" aria-label="Points">
+            <ul class="work-points" role="list" aria-label="Work points">
               <li class="work-points-item">
-                <h3 class="work-points-item-title heading-6">Planning</h3>
-                <p class="work-points-item-description">
-                  We are driven to help our clients with succeed. In every
-                  interaction and with every solution.
-                </p>
+                <div class="work-points-content">
+                  <h3 class="work-points-title heading-6">Planning</h3>
+                  <p>
+                    We are driven to help our clients with succeed. In every
+                    interaction and with every solution.
+                  </p>
+                </div>
               </li>
               <li class="work-points-item">
-                <h3 class="work-points-item-title heading-6">Briefing</h3>
-                <p class="work-points-item-description">
-                  When you get one of us, you get all of us. We bring innovative
-                  solutions and world-class advice.
-                </p>
+                <div class="work-points-content">
+                  <h3 class="work-points-title heading-6">Briefing</h3>
+                  <p>
+                    When you get one of us, you get all of us. We bring
+                    innovative solutions and world-class advice.
+                  </p>
+                </div>
               </li>
               <li class="work-points-item">
-                <h3 class="work-points-item-title heading-6">Evaluation</h3>
-                <p class="work-points-item-description">
-                  Our clients invest more than their time and money with us;
-                  they also spend their business trust.
-                </p>
+                <div class="work-points-content">
+                  <h3 class="work-points-title heading-6">Evaluation</h3>
+                  <p>
+                    Our clients invest more than their time and money with us;
+                    they also spend their business trust.
+                  </p>
+                </div>
               </li>
             </ul>
           </div>
@@ -761,7 +767,7 @@
               </h2>
             </div>
 
-            <form class="booking-form">
+            <form class="how-we-work-booking-form">
               <input
                 id="name"
                 class="form-control"
@@ -792,7 +798,6 @@
                   class="form-control"
                   name="date"
                   type="date"
-                  placeholder="Date"
                   required
                 />
                 <input
@@ -800,7 +805,6 @@
                   class="form-control"
                   name="time"
                   type="time"
-                  placeholder="Time"
                   required
                 />
               </div>
@@ -811,7 +815,7 @@
                 placeholder="Service Description"
                 required
               ></textarea>
-              <button class="button button-primary" type="submit">
+              <button class="button button-primary button-large" type="submit">
                 Submit
               </button>
             </form>

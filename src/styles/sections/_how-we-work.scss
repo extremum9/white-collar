@@ -1,0 +1,45 @@
+@use "../abstracts" as *;
+
+.how-we-work {
+	&-section {
+		padding-block: toRem(140) toRem(120);
+		background-color: var(--secondary-color);
+		&,
+		.heading-6 {
+			color: var(--contrast-color);
+		}
+
+		.container {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: toRem(35);
+		}
+	}
+
+	&-project-count {
+		display: flex;
+		align-items: center;
+		gap: toRem(20);
+		margin-block: toRem(40);
+		padding: toRem(35);
+		background-color: var(--primary-color);
+		&-description {
+			font-family: var(--font-family-secondary);
+			font-size: var(--text-size-xl);
+		}
+	}
+
+	&-booking {
+		&-form {
+			display: grid;
+			row-gap: toRem(25);
+			margin-block-start: toRem(40);
+			padding: toRem(60) toRem(45) toRem(40);
+			background-color: var(--contrast-color);
+			button[type="submit"] {
+				justify-self: start;
+				margin-block-start: toRem(10);
+			}
+		}
+	}
+}

@@ -39,4 +39,8 @@
 			background-color: var(--contrast-color);
 		}
 	}
+
+	&-large {
+		padding: toRem(17) toRem(60);
+	}
 }

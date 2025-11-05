@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+.work-points {
+	display: grid;
+	row-gap: toRem(20);
+	&-item {
+		min-height: 1.6875rem;
+		padding-inline-start: toRem(43);
+		background: url(/icons/tick-circle-green.svg) no-repeat;
+	}
+
+	&-content {
+		padding-block-end: toRem(20);
+		border-block-end: 1px solid var(--contrast-color);
+	}
+
+	&-title {
+		margin-block-end: toRem(5);
+		font-size: var(--text-size-lg);
+	}
+}
