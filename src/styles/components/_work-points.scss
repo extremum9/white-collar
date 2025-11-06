@@ -7,6 +7,9 @@
 		min-height: 1.6875rem;
 		padding-inline-start: toRem(43);
 		background: url(/icons/tick-circle-green.svg) no-repeat;
+		@include breakpoint-xs-down {
+			padding-inline-start: toRem(35);
+		}
 	}
 
 	&-content {
@@ -17,5 +20,8 @@
 	&-title {
 		margin-block-end: toRem(5);
 		font-size: var(--text-size-lg);
+		@include breakpoint-xs-down {
+			font-size: var(--text-size-md);
+		}
 	}
 }

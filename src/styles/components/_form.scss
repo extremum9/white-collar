@@ -4,6 +4,8 @@
 	&-row {
 		display: flex;
 		align-items: center;
-		gap: toRem(10);
+		@include breakpoint-sm-down {
+			flex-direction: column;
+		}
 	}
 }
