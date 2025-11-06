@@ -2,8 +2,27 @@
 
 .expert {
 	&-section {
-		padding-block: toRem(220);
+		padding-block: toRem(250);
 		background: url("/images/expert-image.jpg") center / cover no-repeat;
+		@include breakpoint-2xl-down {
+			padding-block: toRem(220);
+		}
+
+		@include breakpoint-xl-down {
+			padding-block: toRem(180);
+		}
+
+		@include breakpoint-lg-down {
+			padding-block: toRem(100);
+		}
+
+		@include breakpoint-md-down {
+			padding-block: toRem(80);
+		}
+
+		@include breakpoint-xs-down {
+			padding-block: toRem(40);
+		}
 	}
 
 	&-title {
@@ -14,10 +33,27 @@
 	&-link {
 		padding: toRem(87) toRem(130);
 		background-color: rgba(55, 57, 63, 0.8);
-		backdrop-filter: blur(toRem(10));
+		backdrop-filter: blur(toRem(4));
 		transition: background-color var(--transition-duration) var(--transition-timing-function);
 		@include hover {
 			background-color: var(--primary-color);
+		}
+
+		@include breakpoint-xl-down {
+			padding: toRem(70) toRem(130);
+		}
+
+		@include breakpoint-lg-down {
+			display: grid;
+			padding: toRem(70) toRem(100);
+		}
+
+		@include breakpoint-md-down {
+			padding: toRem(60);
+		}
+
+		@include breakpoint-xs-down {
+			padding: toRem(40);
 		}
 	}
 }
