@@ -2,13 +2,13 @@
 
 .blog {
 	&-section {
-		padding-block: toRem(140);
+		padding-block: toRem(140) toRem(60);
 		@include breakpoint-xl-down {
-			padding-block: toRem(80);
+			padding-block: toRem(80) toRem(40);
 		}
 
 		@include breakpoint-md-down {
-			padding-block: toRem(40);
+			padding-block: toRem(40) toRem(20);
 		}
 	}
 

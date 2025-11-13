@@ -32,8 +32,8 @@
 
 	&-link {
 		padding: toRem(87) toRem(130);
-		background-color: rgba(55, 57, 63, 0.8);
 		backdrop-filter: blur(toRem(4));
+		background-color: rgba(55, 57, 63, 0.8);
 		transition: background-color var(--transition-duration) var(--transition-timing-function);
 		@include hover {
 			background-color: var(--primary-color);

@@ -1,0 +1,28 @@
+@use "../abstracts" as *;
+
+.cta {
+	&-section {
+		padding-block: toRem(60) toRem(140);
+		.container {
+			position: relative;
+			isolation: isolate;
+			padding: toRem(100) toRem(60);
+			text-align: center;
+			background: var(--primary-color) url("/images/cta-image.jpg") center / cover no-repeat;
+			&::before {
+				content: "";
+				position: absolute;
+				inset: 0;
+				z-index: -1;
+				backdrop-filter: blur(toRem(6));
+				background-color: rgba(64, 221, 182, 0.75);
+			}
+		}
+
+		.section-head {
+			max-width: toRem(700);
+			margin-inline: auto;
+			margin-block-end: toRem(40);
+		}
+	}
+}

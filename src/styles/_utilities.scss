@@ -33,6 +33,10 @@
     }
   }
 
+  &-dark {
+    color: var(--heading-color);
+  }
+
   &-center {
     max-width: toRem(800);
     margin-inline: auto;
@@ -51,6 +55,10 @@
   &-title {
     &:not(:last-child) {
       margin-block-end: toRem(20);
+    }
+
+    &-highlight-text {
+      color: var(--contrast-color);
     }
   }
 }
