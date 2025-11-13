@@ -1,0 +1,56 @@
+@use "../abstracts" as *;
+
+.blog-card {
+	position: relative;
+	&-date,
+	&-meta-link {
+		position: relative;
+		z-index: 2;
+	}
+
+	&-meta {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		margin-block-end: toRem(20);
+		&-link {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: toRem(10);
+			color: var(--heading-color);
+			background-color: var(--primary-color);
+			transition-property: background-color;
+			&:not(:last-child) {
+				border-inline-end: 2px solid #2d9e82;
+			}
+
+			svg {
+				color: #207f68;
+			}
+
+			@include hover {
+				background-color: var(--white-color);
+			}
+		}
+	}
+
+	&-date {
+		padding: toRem(20);
+		text-align: center;
+		color: var(--contrast-color);
+		background-color: var(--secondary-color);
+	}
+
+	&-title {
+		margin-block-end: toRem(12);
+		@include hover {
+			a {
+				color: var(--secondary-color);
+			}
+		}
+	}
+
+	&-description {
+		margin-block-end: toRem(20);
+	}
+}

@@ -1,0 +1,24 @@
+@use "../abstracts" as *;
+
+.blog {
+	&-section {
+		padding-block: toRem(140);
+	}
+
+	&-head {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1.25rem;
+		margin-block-end: 2.5rem;
+		.section-head {
+			margin-block-end: 0;
+		}
+	}
+
+	&-list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: toRem(30);
+	}
+}
