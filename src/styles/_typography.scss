@@ -73,6 +73,9 @@ h3,
 h4,
 .heading-4 {
 	font-size: var(--text-size-2xl);
+	@include breakpoint-xs-down {
+		font-size: var(--text-size-xl);
+	}
 }
 
 h5,

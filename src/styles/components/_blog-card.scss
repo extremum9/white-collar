@@ -2,26 +2,49 @@
 
 .blog-card {
 	position: relative;
-	&-date,
-	&-meta-link {
-		position: relative;
-		z-index: 2;
+	&-image {
+		img {
+			width: 100%;
+		}
 	}
 
 	&-meta {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
 		margin-block-end: toRem(20);
+		@include breakpoint-xl-up {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		&-date,
 		&-link {
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			padding: toRem(20) toRem(10);
+			text-align: center;
+			@include breakpoint-xs-down {
+				padding: toRem(14) toRem(10);
+			}
+		}
+
+		&-date {
+			color: var(--contrast-color);
+			background-color: var(--secondary-color);
+		}
+
+		&-link {
 			gap: toRem(10);
+			position: relative;
+			z-index: 2;
 			color: var(--heading-color);
 			background-color: var(--primary-color);
 			transition-property: background-color;
 			&:not(:last-child) {
-				border-inline-end: 2px solid #2d9e82;
+				border-block-end: 2px solid #2d9e82;
+				@include breakpoint-xl-up {
+					border-inline-end: 2px solid #2d9e82;
+					border-block-end: none;
+				}
 			}
 
 			svg {
@@ -32,13 +55,6 @@
 				background-color: var(--white-color);
 			}
 		}
-	}
-
-	&-date {
-		padding: toRem(20);
-		text-align: center;
-		color: var(--contrast-color);
-		background-color: var(--secondary-color);
 	}
 
 	&-title {

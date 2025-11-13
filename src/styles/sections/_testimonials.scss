@@ -11,12 +11,12 @@
 			border-block-start: 1px solid #c5c5c5;
 			@include breakpoint-xl-down {
 				grid-template-columns: repeat(2, 1fr);
+				gap: toRem(16) toRem(20);
 				padding-block: toRem(80);
 			}
 
 			@include breakpoint-md-down {
 				grid-template-columns: 1fr;
-				gap: toRem(16) toRem(20);
 				padding-block: toRem(40);
 			}
 		}

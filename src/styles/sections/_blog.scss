@@ -3,12 +3,20 @@
 .blog {
 	&-section {
 		padding-block: toRem(140);
+		@include breakpoint-xl-down {
+			padding-block: toRem(80);
+		}
+
+		@include breakpoint-md-down {
+			padding-block: toRem(40);
+		}
 	}
 
 	&-head {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		flex-wrap: wrap;
 		gap: 1.25rem;
 		margin-block-end: 2.5rem;
 		.section-head {
@@ -18,7 +26,7 @@
 
 	&-list {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: toRem(30);
+		grid-template-columns: repeat(auto-fill, minmax(min(toRem(400), 100%), 1fr));
+		gap: toRem(40) toRem(30);
 	}
 }
