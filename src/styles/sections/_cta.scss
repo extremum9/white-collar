@@ -20,9 +20,37 @@
 		}
 
 		.section-head {
-			max-width: toRem(700);
 			margin-inline: auto;
 			margin-block-end: toRem(40);
+		}
+
+		@include breakpoint-lg-up {
+			.section-head {
+				max-width: toRem(700);
+			}
+		}
+
+		@include breakpoint-xl-down {
+			padding-block: toRem(40) toRem(80);
+		}
+
+		@include breakpoint-lg-down {
+			.container {
+				padding: toRem(80) toRem(40);
+			}
+		}
+
+		@include breakpoint-md-down {
+			padding-block: toRem(20) toRem(40);
+			.container {
+				padding: toRem(60) toRem(20);
+			}
+		}
+
+		@include breakpoint-xs-down {
+			.container {
+				padding: toRem(40) toRem(20);
+			}
 		}
 	}
 }
