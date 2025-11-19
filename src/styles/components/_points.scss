@@ -7,9 +7,21 @@
 		min-height: toRem(27);
 		padding-inline-start: toRem(35);
 		background: url("/icons/tick-circle-blue.svg") no-repeat;
+		&-border {
+			padding: toRem(30) toRem(30) toRem(30) toRem(75);
+			border: 1px solid #e3e3e3;
+			background-position: toRem(30) toRem(30);
+			@include breakpoint-xs-down {
+				padding: toRem(70) toRem(20) toRem(20);
+				background-position: toRem(20) toRem(25);
+			}
+		}
 	}
 
 	&-title {
 		font-weight: 400;
+		&:not(:last-child) {
+			margin-block-end: toRem(10);
+		}
 	}
 }

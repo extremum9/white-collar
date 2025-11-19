@@ -6,8 +6,8 @@
 		border: 1px solid #e3e3e3;
 		background: no-repeat toRem(30) toRem(30);
 		@include breakpoint-xs-down {
-			background: no-repeat toRem(20) toRem(15);
 			padding: toRem(70) toRem(20) toRem(20);
+			background: no-repeat toRem(20) toRem(15);
 		}
 	}
 
