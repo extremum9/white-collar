@@ -4,7 +4,6 @@
 	&-section {
 		display: grid;
 		grid-template-columns: 0.8fr 1fr;
-		background: var(--heading-color) url("/images/hero-image.jpg") center / cover no-repeat;
 		@include breakpoint-2xl-down {
 			grid-template-columns: repeat(2, 1fr);
 		}
@@ -36,11 +35,13 @@
 	}
 
 	&-description {
-		margin-block-end: toRem(35);
 		font-weight: 500;
 		color: #b9b9b9;
-		@include breakpoint-xs-down {
-			margin-block-end: toRem(20);
+		&:not(:last-child) {
+			margin-block-end: toRem(35);
+			@include breakpoint-xs-down {
+				margin-block-end: toRem(20);
+			}
 		}
 	}
 
