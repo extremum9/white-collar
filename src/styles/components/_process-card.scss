@@ -1,0 +1,39 @@
+@use "../abstracts" as *;
+
+.process-card {
+	position: relative;
+	padding: toRem(68) toRem(20) toRem(40);
+	text-align: center;
+	background-color: var(--background-color);
+	@include hover {
+		.process-card-icon {
+			color: var(--secondary-color);
+		}
+	}
+
+	&-icon {
+		position: absolute;
+		top: -12%;
+		left: 0;
+		width: 100%;
+		margin-inline: auto;
+		color: var(--primary-color);
+		transition: color var(--transition-duration) var(--transition-timing-function);
+	}
+
+	&-title {
+		margin-block-end: toRem(15);
+	}
+
+	&-description {
+		margin-block-end: toRem(25);
+	}
+
+	&-link {
+		font-weight: 600;
+		color: var(--secondary-color);
+		@include hover {
+			color: var(--primary-color);
+		}
+	}
+}

@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+
+.work-process {
+	&-section {
+		padding-block: toRem(140);
+	}
+
+	&-list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: toRem(30);
+		margin-block-start: toRem(70);
+	}
+}
