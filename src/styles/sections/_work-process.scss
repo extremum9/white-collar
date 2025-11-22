@@ -3,12 +3,19 @@
 .work-process {
 	&-section {
 		padding-block: toRem(140);
+		@include breakpoint-xl-down {
+			padding-block: toRem(80);
+		}
+
+		@include breakpoint-md-down {
+			padding-block: toRem(40);
+		}
 	}
 
 	&-list {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: toRem(30);
+		grid-template-columns: repeat(auto-fill, minmax(min(toRem(320), 100%), 1fr));
+		gap: toRem(70) toRem(30);
 		margin-block-start: toRem(70);
 	}
 }

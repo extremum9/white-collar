@@ -1,12 +1,15 @@
 @use "../abstracts" as *;
 
-.process-card {
+.work-process-card {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	justify-items: center;
 	position: relative;
-	padding: toRem(68) toRem(20) toRem(40);
+	padding: toRem(60) toRem(20) toRem(40);
 	text-align: center;
 	background-color: var(--background-color);
 	@include hover {
-		.process-card-icon {
+		.work-process-card-icon {
 			color: var(--secondary-color);
 		}
 	}

@@ -15,7 +15,7 @@
 
   &-head {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(toRem(240), 1fr));
     align-items: center;
     justify-items: start;
     gap: toRem(35) toRem(16);
