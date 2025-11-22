@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 .achievement-card {
-	padding: toRem(30) toRem(30) toRem(30) toRem(80);
+	padding: toRem(30) toRem(30) toRem(30) toRem(85);
 	border: 1px solid #e3e3e3;
 	background: no-repeat toRem(30) toRem(30);
 	@include breakpoint-xs-down {

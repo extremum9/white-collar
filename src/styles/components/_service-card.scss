@@ -22,7 +22,7 @@
 			}
 
 			&-icon {
-				background-color: var(--secondary-color);
+				color: var(--secondary-color);
 			}
 		}
 	}
@@ -44,14 +44,8 @@
 	}
 
 	&-icon {
-		display: grid;
-		place-content: center;
-		flex-shrink: 0;
-		width: toRem(72);
-		height: toRem(72);
-		border-radius: 50%;
-		background-color: var(--primary-color);
-		transition: background-color var(--transition-duration) var(--transition-timing-function);
+		color: var(--primary-color);
+		transition: color var(--transition-duration) var(--transition-timing-function);
 	}
 }
 

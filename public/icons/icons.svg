@@ -71,4 +71,56 @@
 		<path fill="none" d="M29.9531 36H34.6562L31.9688 39.3594C32.411 39.3586 32.8467 39.467 33.237 39.675C33.6274 39.883 33.9604 40.1841 34.2065 40.5516C34.4525 40.9191 34.6041 41.3417 34.6477 41.7818C34.6914 42.2219 34.6257 42.666 34.4565 43.0747C34.2874 43.4834 34.02 43.844 33.678 44.1245C33.3361 44.4051 32.9302 44.5969 32.4964 44.683C32.0626 44.7691 31.6142 44.7467 31.191 44.618C30.7679 44.4892 30.3831 44.2581 30.0707 43.9449" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 		<path fill="none" d="M38.6875 38.0156L41.375 36V44.7344" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 	</symbol>
+
+	<symbol id="bank" viewBox="0 0 72 72">
+		<circle fill="currentColor" cx="36" cy="36" r="36" />
+		<path fill="none" d="M18.125 30H53.875L36 18L18.125 30Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" d="M23.625 30V45" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" d="M31.875 30V45" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" d="M40.125 30V45" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" d="M48.375 30V45" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" d="M19.5 45H52.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" d="M16.75 51H55.25" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+	</symbol>
+
+	<symbol id="bar-chart" viewBox="0 0 72 72">
+		<circle fill="currentColor" cx="36" cy="36" r="36" />
+		<path fill="none" d="M52.5 52.5H19.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		<path fill="none" d="M39 27V45C39 45.8284 39.6716 46.5 40.5 46.5H48C48.8284 46.5 49.5 45.8284 49.5 45V27C49.5 26.1716 48.8284 25.5 48 25.5H40.5C39.6716 25.5 39 26.1716 39 27Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		<path fill="none" d="M31.5 18H24C23.1716 18 22.5 18.6716 22.5 19.5V45C22.5 45.8284 23.1716 46.5 24 46.5H31.5C32.3284 46.5 33 45.8284 33 45V19.5C33 18.6716 32.3284 18 31.5 18Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+	</symbol>
+
+	<symbol id="script" viewBox="0 0 72 72">
+		<circle fill="currentColor" cx="36" cy="36" r="36" />
+		<path fill="none" d="M39.9375 20.25V29.4375H49.125" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" d="M39.2812 36L43.2188 39.9375L39.2812 43.875" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" d="M32.7188 36L28.7812 39.9375L32.7188 43.875" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" d="M47.8125 51.75C48.1606 51.75 48.4944 51.6117 48.7406 51.3656C48.9867 51.1194 49.125 50.7856 49.125 50.4375V29.4375L39.9375 20.25H24.1875C23.8394 20.25 23.5056 20.3883 23.2594 20.6344C23.0133 20.8806 22.875 21.2144 22.875 21.5625V50.4375C22.875 50.7856 23.0133 51.1194 23.2594 51.3656C23.5056 51.6117 23.8394 51.75 24.1875 51.75H47.8125Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+	</symbol>
+
+	<symbol id="database" viewBox="0 0 72 72">
+		<circle fill="currentColor" cx="36" cy="36" r="36" />
+		<path fill="none" d="M17.625 50.4375H54.375" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" d="M38.625 50.4375V21.5625C38.625 21.2144 38.4867 20.8806 38.2406 20.6344C37.9944 20.3883 37.6606 20.25 37.3125 20.25H21.5625C21.2144 20.25 20.8806 20.3883 20.6344 20.6344C20.3883 20.8806 20.25 21.2144 20.25 21.5625V50.4375" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" d="M51.75 50.4375V32.0625C51.75 31.7144 51.6117 31.3806 51.3656 31.1344C51.1194 30.8883 50.7856 30.75 50.4375 30.75H38.625" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" d="M25.5 26.8125H30.75" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" d="M28.125 37.3125H33.375" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" d="M25.5 43.875H30.75" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" d="M43.875 43.875H46.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" d="M43.875 37.3125H46.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+	</symbol>
+
+	<symbol id="report" viewBox="0 0 72 72">
+		<circle fill="currentColor" cx="36" cy="36" r="36" />
+		<path fill="none" d="M41.4997 52.12H28.6597C26.3197 52.12 24.4297 50.23 24.4297 47.89V27" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" />
+		<path fill="none" d="M21.5801 19H43.2801C45.5501 19 47.4001 20.84 47.4001 23.12V32.39" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" />
+		<path fill="none" d="M24.42 26.28H19V21.71C19 20.21 20.21 19 21.71 19C23.21 19 24.42 20.21 24.42 21.71V26.28Z" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" />
+		<path fill="none" d="M52.3201 39.9999L51.1001 41.8199L50.6701 43.9699L48.5201 44.3999L46.7001 45.6199L44.8801 44.3999L42.7301 43.9699L42.3001 41.8199L41.0801 39.9999L42.3001 38.1799L42.7301 36.0299L44.8801 35.5999L46.7001 34.3799L48.5201 35.5999L50.6701 36.0299L51.1001 38.1799L52.3201 39.9999Z" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" />
+		<path fill="none" d="M49.8104 43.8501V51.3301L46.7104 49.2501L43.6104 51.3301V43.8501" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" />
+		<path fill="none" d="M30.0703 25.25H40.2803" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" />
+		<path fill="none" d="M30.0703 30.5H40.2803" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" />
+		<path fill="none" d="M30.0703 35.6899H40.2803" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" />
+		<path fill="none" d="M30.0703 40.77H36.8403" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" />
+		<path fill="none" d="M30.0703 45.96H36.8403" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" />
+	</symbol>
 </svg>
