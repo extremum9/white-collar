@@ -1,7 +1,10 @@
-@use "abstracts" as *;
+@use 'abstracts' as *;
 
 .container {
-  width: min(var(--container-max-width), 100% - (var(--container-padding-x) * 2));
+  width: min(
+    var(--container-max-width),
+    100% - (var(--container-padding-x) * 2)
+  );
   margin-inline: auto;
 }
 
@@ -11,7 +14,7 @@
 
 .stretched-link {
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     inset: 0;
     z-index: 1;
@@ -68,7 +71,7 @@
   align-items: center;
   column-gap: toRem(6);
   &::before {
-    content: "";
+    content: '';
     width: toRem(12);
     height: toRem(12);
     flex: 0 0 toRem(12);

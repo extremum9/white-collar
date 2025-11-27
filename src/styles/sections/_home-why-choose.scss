@@ -1,70 +1,70 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .home-why-choose {
-	&-section {
-		padding-block: toRem(110) toRem(80);
-		color: var(--contrast-color);
-		background: url("/images/why-choose-image.jpg") center / auto no-repeat;
-		background-color: var(--heading-color);
-		@include breakpoint-3xl-up {
-			background-position: 100%;
-		}
+  &-section {
+    padding-block: toRem(110) toRem(80);
+    color: var(--contrast-color);
+    background: url('/images/why-choose-image.jpg') center / auto no-repeat;
+    background-color: var(--heading-color);
+    @include breakpoint-3xl-up {
+      background-position: 100%;
+    }
 
-		@include breakpoint-2xl-up {
-			background-position: 140%;
-			.section-head {
-				max-width: toRem(600);
-			}
-		}
+    @include breakpoint-2xl-up {
+      background-position: 140%;
+      .section-head {
+        max-width: toRem(600);
+      }
+    }
 
-		@include breakpoint-2xl-down {
-			padding-block: toRem(40);
-			background-size: cover;
-		}
+    @include breakpoint-2xl-down {
+      padding-block: toRem(40);
+      background-size: cover;
+    }
 
-		@include breakpoint-lg-down {
-			padding-block: toRem(60);
-		}
+    @include breakpoint-lg-down {
+      padding-block: toRem(60);
+    }
 
-		@include breakpoint-md-down {
-			padding-block: toRem(40);
-			background-image: none;
-		}
+    @include breakpoint-md-down {
+      padding-block: toRem(40);
+      background-image: none;
+    }
 
-		.section-head {
-			margin-block-end: toRem(45);
-		}
-	}
+    .section-head {
+      margin-block-end: toRem(45);
+    }
+  }
 
-	&-body {
-		@include breakpoint-2xl-up {
-			max-width: toRem(680);
-		}
+  &-body {
+    @include breakpoint-2xl-up {
+      max-width: toRem(680);
+    }
 
-		@include breakpoint-2xl-down {
-			padding: toRem(80) toRem(60);
-			background-color: rgba(55, 57, 63, 0.95);
-		}
+    @include breakpoint-2xl-down {
+      padding: toRem(80) toRem(60);
+      background-color: rgba(55, 57, 63, 0.95);
+    }
 
-		@include breakpoint-lg-down {
-			padding: toRem(60) toRem(40);
-		}
+    @include breakpoint-lg-down {
+      padding: toRem(60) toRem(40);
+    }
 
-		@include breakpoint-md-down {
-			padding: 0;
-		}
-	}
+    @include breakpoint-md-down {
+      padding: 0;
+    }
+  }
 
-	&-progress {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(toRem(250), 1fr));
-		gap: toRem(15);
-		margin-block-end: toRem(35);
-	}
+  &-progress {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(toRem(250), 1fr));
+    gap: toRem(15);
+    margin-block-end: toRem(35);
+  }
 
-	&-metrics {
-		.link-cta {
-			justify-self: start;
-		}
-	}
+  &-metrics {
+    .link-cta {
+      justify-self: start;
+    }
+  }
 }

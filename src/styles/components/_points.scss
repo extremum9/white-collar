@@ -1,27 +1,40 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .points {
-	display: grid;
-	row-gap: toRem(30);
-	&-item {
-		min-height: toRem(27);
-		padding-inline-start: toRem(35);
-		background: url("/icons/tick-circle-blue.svg") no-repeat;
-		&-border {
-			padding: toRem(30) toRem(30) toRem(30) toRem(75);
-			border: 1px solid #e3e3e3;
-			background-position: toRem(30) toRem(30);
-			@include breakpoint-xs-down {
-				padding: toRem(70) toRem(20) toRem(20);
-				background-position: toRem(20) toRem(25);
-			}
-		}
-	}
+  display: grid;
+  row-gap: toRem(30);
+  &-item {
+    display: flex;
+    align-items: start;
+    column-gap: toRem(10);
+    &-border {
+      column-gap: toRem(15);
+      padding: toRem(30);
+      border: 1px solid #e3e3e3;
+      @include breakpoint-xs-down {
+        padding: toRem(20);
+      }
+    }
+  }
 
-	&-title {
-		font-weight: 400;
-		&:not(:last-child) {
-			margin-block-end: toRem(10);
-		}
-	}
+  &-icon {
+    &-primary {
+      color: var(--primary-color);
+    }
+
+    &-secondary {
+      color: var(--secondary-color);
+    }
+  }
+
+  &-title {
+    font-weight: 400;
+    &-highlight {
+      font-weight: 600;
+    }
+
+    &:not(:last-child) {
+      margin-block-end: toRem(10);
+    }
+  }
 }

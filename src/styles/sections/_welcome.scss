@@ -1,86 +1,85 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .welcome {
-	&-section {
-		display: grid;
-		grid-template-columns: 0.8fr 1fr;
-		@include breakpoint-2xl-down {
-			grid-template-columns: repeat(2, 1fr);
-		}
+  &-section {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    @include breakpoint-2xl-down {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
-		@include breakpoint-md-down {
-			grid-template-columns: 1fr;
-		}
-	}
+    @include breakpoint-md-down {
+      grid-template-columns: 1fr;
+    }
+  }
 
-	&-intro {
-		padding: toRem(140) toRem(60) toRem(140) toRem(310);
-		background-color: var(--background-color);
-		@include breakpoint-2xl-down {
-			padding: toRem(100) toRem(60) toRem(100) toRem(200);
-		}
+  &-intro {
+    padding: toRem(140) toRem(60) toRem(140) toRem(310);
+    background-color: var(--background-color);
+    @include breakpoint-2xl-down {
+      padding: toRem(100) toRem(60) toRem(100) toRem(200);
+    }
 
-		@include breakpoint-xl-down {
-			padding: toRem(80) toRem(40);
-		}
+    @include breakpoint-xl-down {
+      padding: toRem(80) toRem(40);
+    }
 
-		@include breakpoint-lg-down {
-			padding: toRem(80) toRem(30);
-		}
+    @include breakpoint-lg-down {
+      padding: toRem(80) toRem(30);
+    }
 
-		@include breakpoint-md-down {
-			padding: toRem(40) var(--container-padding-x);
-		}
+    @include breakpoint-md-down {
+      padding: toRem(40) var(--container-padding-x);
+    }
 
-		&-image,
-		&-description {
-			margin-block-end: toRem(20);
-		}
+    &-image,
+    &-description {
+      margin-block-end: toRem(20);
+    }
 
-		&-title {
-			margin-block-end: toRem(15);
-		}
-	}
+    &-title {
+      margin-block-end: toRem(15);
+    }
+  }
 
-	&-body {
-		padding: toRem(140) toRem(270) toRem(140) toRem(40);
-		@include breakpoint-2xl-down {
-			padding: toRem(100) toRem(40);
-		}
+  &-body {
+    padding: toRem(140) toRem(270) toRem(140) toRem(40);
+    @include breakpoint-2xl-down {
+      padding: toRem(100) toRem(40);
+    }
 
-		@include breakpoint-xl-down {
-			padding: toRem(80) toRem(40);
-		}
+    @include breakpoint-xl-down {
+      padding: toRem(80) toRem(40);
+    }
 
-		@include breakpoint-lg-down {
-			padding: toRem(80) toRem(30);
-		}
+    @include breakpoint-lg-down {
+      padding: toRem(80) toRem(30);
+    }
 
-		@include breakpoint-md-down {
-			padding: toRem(40) var(--container-padding-x);
-		}
+    @include breakpoint-md-down {
+      padding: toRem(40) var(--container-padding-x);
+    }
 
-		.section-head {
-			max-width: toRem(670);
-			margin-block-end: toRem(30);
-		}
-	}
+    .section-head {
+      max-width: toRem(670);
+      margin-block-end: toRem(30);
+    }
+  }
 
-	&-title {
-		margin-block-end: toRem(20);
-	}
+  &-title {
+    margin-block-end: toRem(20);
+  }
 
-	&-points,
-	&-achievements {
-		margin-block-end: toRem(40);
-		@include breakpoint-xl-down {
-			margin-block-end: toRem(30);
-		}
-	}
+  &-points,
+  &-achievements {
+    margin-block-end: toRem(40);
+    @include breakpoint-xl-down {
+      margin-block-end: toRem(30);
+    }
+  }
 
-	&-achievements {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
-		gap: toRem(20);
-	}
+  &-achievements {
+    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+    gap: toRem(20);
+  }
 }
