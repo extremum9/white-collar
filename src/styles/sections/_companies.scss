@@ -1,23 +1,23 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .companies-section {
-	padding-block: toRem(100) toRem(80);
-	@include breakpoint-xl-down {
-		padding-block: toRem(60);
-	}
+  padding-block: toRem(100) toRem(80);
+  @include breakpoint-xl-down {
+    padding-block: toRem(60);
+  }
 
-	@include breakpoint-md-down {
-		padding-block: toRem(20) toRem(60);
-	}
+  @include breakpoint-md-down {
+    padding-block: toRem(20) toRem(60);
+  }
 
-	.container {
-		display: flex;
-		align-items: center;
-		justify-content: space-evenly;
-		flex-wrap: wrap;
-		gap: toRem(30);
-		@include breakpoint-xs-down {
-			flex-direction: column;
-		}
-	}
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: toRem(40) toRem(30);
+    @include breakpoint-xs-down {
+      flex-direction: column;
+    }
+  }
 }

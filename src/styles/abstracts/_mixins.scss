@@ -9,3 +9,14 @@
   white-space: nowrap !important;
   border: 0 !important;
 }
+
+@mixin icon-circle($size) {
+  display: inline-grid;
+  place-content: center;
+  flex-shrink: 0;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
+}

@@ -1,44 +1,44 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .work-process-card {
-	display: grid;
-	grid-template-rows: subgrid;
-	grid-row: span 3;
-	justify-items: center;
-	gap: 0;
-	position: relative;
-	padding: toRem(60) toRem(20) toRem(40);
-	text-align: center;
-	background-color: var(--background-color);
-	@include hover {
-		.work-process-card-icon {
-			color: var(--secondary-color);
-		}
-	}
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  justify-items: center;
+  gap: 0;
+  position: relative;
+  padding: toRem(60) toRem(20) toRem(40);
+  text-align: center;
+  background-color: var(--background-color);
+  @include hover {
+    .work-process-card-icon {
+      background-color: var(--secondary-color);
+    }
+  }
 
-	&-icon {
-		position: absolute;
-		top: toRem(-36);
-		left: 0;
-		width: 100%;
-		margin-inline: auto;
-		color: var(--primary-color);
-		transition: color var(--transition-duration) var(--transition-timing-function);
-	}
+  &-icon {
+    @include icon-circle(toRem(72));
+    position: absolute;
+    top: toRem(-36);
+    left: 50%;
+    translate: -50% 0;
+    color: var(--contrast-color);
+    background-color: var(--primary-color);
+  }
 
-	&-title {
-		margin-block-end: toRem(15);
-	}
+  &-title {
+    margin-block-end: toRem(15);
+  }
 
-	&-description {
-		margin-block-end: toRem(25);
-	}
+  &-description {
+    margin-block-end: toRem(25);
+  }
 
-	&-link {
-		font-weight: 600;
-		color: var(--secondary-color);
-		@include hover {
-			color: var(--primary-color);
-		}
-	}
+  &-link {
+    font-weight: 600;
+    color: var(--secondary-color);
+    @include hover {
+      color: var(--primary-color);
+    }
+  }
 }

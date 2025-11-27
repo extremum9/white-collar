@@ -1,4 +1,4 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .footer {
   color: var(--contrast-color);
@@ -8,6 +8,7 @@
     @include breakpoint-xl-down {
       padding-block: toRem(40);
     }
+
     @include breakpoint-md-down {
       padding-block: toRem(20);
     }
@@ -34,7 +35,8 @@
 
     &-link {
       .footer-contact-text {
-        transition: color var(--transition-duration) var(--transition-timing-function);
+        transition: color var(--transition-duration)
+          var(--transition-timing-function);
       }
 
       @include hover {
@@ -45,18 +47,9 @@
     }
 
     &-icon {
-      display: inline-grid;
-      place-content: center;
-      flex-shrink: 0;
-      width: toRem(68);
-      height: toRem(68);
+      @include icon-circle(toRem(68));
       color: var(--primary-color);
-      border-radius: 50%;
       background-color: #4c4d52;
-      @include breakpoint-xs-down {
-        width: toRem(54);
-        height: toRem(54);
-      }
     }
 
     &-caption {
@@ -74,7 +67,10 @@
     padding-block: toRem(50);
     border-block: 1px solid var(--divider-color);
     @include breakpoint-lg-down {
-      grid-template-columns: repeat(auto-fill, minmax(min(toRem(350), 100%), 1fr));
+      grid-template-columns: repeat(
+        auto-fill,
+        minmax(min(toRem(350), 100%), 1fr)
+      );
     }
     @include breakpoint-md-down {
       padding-block: toRem(30);

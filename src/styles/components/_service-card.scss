@@ -1,67 +1,69 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .service-card,
 .service-more-card-link {
-	padding: toRem(30);
-	@include breakpoint-xs-down {
-		padding: toRem(20);
-	}
+  padding: toRem(30);
+  @include breakpoint-xs-down {
+    padding: toRem(20);
+  }
 }
 
 .service-card {
-	display: flex;
-	align-items: start;
-	justify-content: space-between;
-	gap: toRem(20);
-	position: relative;
-	background-color: var(--background-color);
-	@include hover {
-		.service-card {
-			&-title {
-				color: var(--secondary-color);
-			}
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: toRem(20);
+  position: relative;
+  background-color: var(--background-color);
+  @include hover {
+    .service-card {
+      &-title {
+        color: var(--secondary-color);
+      }
 
-			&-icon {
-				color: var(--secondary-color);
-			}
-		}
-	}
+      &-icon {
+        background-color: var(--secondary-color);
+      }
+    }
+  }
 
-	@include breakpoint-xs-down {
-		flex-direction: column-reverse;
-	}
+  @include breakpoint-xs-down {
+    flex-direction: column-reverse;
+  }
 
-	&-title {
-		margin-block-end: toRem(28);
-		transition: color var(--transition-duration) var(--transition-timing-function);
-		@include breakpoint-xs-down {
-			margin-block-end: toRem(10);
-		}
-	}
+  &-title {
+    margin-block-end: toRem(28);
+    transition: color var(--transition-duration)
+      var(--transition-timing-function);
+    @include breakpoint-xs-down {
+      margin-block-end: toRem(10);
+    }
+  }
 
-	&-link {
-		color: var(--secondary-color);
-	}
+  &-link {
+    color: var(--secondary-color);
+  }
 
-	&-icon {
-		color: var(--primary-color);
-		transition: color var(--transition-duration) var(--transition-timing-function);
-	}
+  &-icon {
+    @include icon-circle(toRem(72));
+    color: var(--contrast-color);
+    background-color: var(--primary-color);
+  }
 }
 
 .service-more-card-link {
-	display: grid;
-	place-content: center;
-	border: 2px solid var(--secondary-color);
-	color: var(--contrast-color);
-	background-color: var(--secondary-color);
-	transition-property: color, background-color;
-	@include hover {
-		color: var(--secondary-color);
-		background-color: transparent;
-	}
+  display: grid;
+  place-content: center;
+  border: 2px solid var(--secondary-color);
+  color: var(--contrast-color);
+  background-color: var(--secondary-color);
+  transition-property: color, background-color;
+  @include hover {
+    color: var(--secondary-color);
+    background-color: transparent;
+  }
 
-	@include breakpoint-xs-down {
-		font-size: toRem(20);
-	}
+  @include breakpoint-xs-down {
+    font-size: toRem(20);
+  }
 }
