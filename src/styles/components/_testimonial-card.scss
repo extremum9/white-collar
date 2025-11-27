@@ -1,59 +1,53 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .testimonial-card {
-	padding: toRem(40) toRem(35);
-	background-color: var(--background-color);
-	@include breakpoint-xs-down {
-		padding: toRem(30) toRem(20);
-	}
+  padding: toRem(40) toRem(35);
+  background-color: var(--background-color);
+  @include breakpoint-xs-down {
+    padding: toRem(30) toRem(20);
+  }
 
-	&-head {
-		display: flex;
-		align-items: center;
-		gap: toRem(20);
-		margin-block-end: toRem(35);
-		@include breakpoint-md-down {
-			margin-block-end: toRem(25);
-		}
+  &-head {
+    display: flex;
+    align-items: center;
+    gap: toRem(20);
+    margin-block-end: toRem(35);
+    @include breakpoint-md-down {
+      margin-block-end: toRem(25);
+    }
 
-		@include breakpoint-xs-down {
-			gap: toRem(16);
-		}
-	}
+    @include breakpoint-xs-down {
+      gap: toRem(16);
+    }
+  }
 
-	&-avatar {
-		flex-shrink: 0;
-		overflow: hidden;
-		border-radius: 50%;
-		@include breakpoint-md-down {
-			max-width: toRem(80);
-		}
+  &-avatar {
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    @include breakpoint-md-down {
+      max-width: toRem(80);
+    }
 
-		@include breakpoint-2xs-down {
-			max-width: toRem(68);
-		}
-	}
+    @include breakpoint-2xs-down {
+      max-width: toRem(68);
+    }
+  }
 
-	&-info {
-		display: grid;
-		row-gap: toRem(2);
-	}
+  &-info {
+    display: grid;
+    row-gap: toRem(2);
+  }
 
-	&-position {
-		font-size: var(--text-size-sm);
-	}
+  &-position {
+    font-size: var(--text-size-sm);
+  }
 
-	&-rating {
-		display: flex;
-		align-items: center;
-		gap: toRem(5);
-	}
-
-	&-quote {
-		font-size: var(--text-size-md);
-		font-style: italic;
-		@include breakpoint-xs-down {
-			font-size: var(--text-size-base);
-		}
-	}
+  &-quote {
+    font-size: var(--text-size-md);
+    font-style: italic;
+    @include breakpoint-xs-down {
+      font-size: var(--text-size-base);
+    }
+  }
 }
