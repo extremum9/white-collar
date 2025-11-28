@@ -63,6 +63,29 @@
     }
   }
 
+  &-points {
+    row-gap: toRem(20);
+    .points {
+      &-item {
+        column-gap: toRem(16);
+      }
+
+      &-content {
+        padding-block-end: toRem(20);
+        border-block-end: 1px solid var(--light-color);
+      }
+
+      &-title {
+        margin-block-end: toRem(5);
+        font-size: var(--text-size-lg);
+        font-weight: 600;
+        @include breakpoint-xs-down {
+          font-size: var(--text-size-md);
+        }
+      }
+    }
+  }
+
   &-booking {
     &-form {
       display: grid;

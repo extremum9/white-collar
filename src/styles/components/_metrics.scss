@@ -2,11 +2,10 @@
 
 .metrics {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   align-items: start;
   gap: toRem(28) toRem(16);
-  @include breakpoint-xs-down {
-    grid-template-columns: 1fr;
+  @include breakpoint-xs-up {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   &-item {
