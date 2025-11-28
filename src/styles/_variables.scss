@@ -1,4 +1,4 @@
-@use "abstracts" as *;
+@use 'abstracts' as *;
 
 :root {
   --primary-color: #40ddb6;
@@ -9,8 +9,8 @@
   --background-color: #f4f4f4;
   --divider-color: #6c6d72;
 
-  --font-family-primary: "Inter", sans-serif;
-  --font-family-secondary: "Poppins", sans-serif;
+  --font-family-primary: 'Inter', sans-serif;
+  --font-family-secondary: 'Poppins', sans-serif;
 
   --text-size-xs: #{toRem(14)};
   --text-size-sm: #{toRem(16)};

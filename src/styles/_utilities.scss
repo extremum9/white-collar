@@ -85,33 +85,3 @@
     background-color: var(--secondary-color);
   }
 }
-
-.link-cta {
-  font-weight: 600;
-  &-primary,
-  &-dark {
-    @include hover {
-      color: var(--secondary-color);
-    }
-  }
-
-  &-primary {
-    color: var(--primary-color);
-  }
-
-  &-secondary {
-    color: var(--secondary-color);
-    @include hover {
-      color: var(--heading-color);
-    }
-  }
-
-  &-dark {
-    color: var(--heading-color);
-  }
-
-  &-underline {
-    text-decoration: underline;
-    text-underline-offset: toRem(6);
-  }
-}
