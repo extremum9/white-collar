@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 .footer {
-  color: var(--contrast-color);
+  color: var(--light-color);
   background-color: var(--heading-color);
   .container {
     padding-block: toRem(95);
@@ -47,14 +47,14 @@
     }
 
     &-icon {
-      @include icon-circle(toRem(68));
+      @include circle-icon(toRem(68));
       color: var(--primary-color);
       background-color: #4c4d52;
     }
 
     &-caption {
       margin-block-end: toRem(5);
-      color: var(--contrast-color);
+      color: var(--light-color);
     }
   }
 
@@ -105,7 +105,7 @@
 
     &-title {
       margin-block-end: toRem(10);
-      color: var(--contrast-color);
+      color: var(--light-color);
     }
 
     &-text {

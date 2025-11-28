@@ -17,12 +17,12 @@
   }
 
   &-icon {
-    @include icon-circle(toRem(72));
+    @include circle-icon(toRem(72));
     position: absolute;
     top: toRem(-36);
     left: 50%;
     translate: -50% 0;
-    color: var(--contrast-color);
+    color: var(--light-color);
     background-color: var(--primary-color);
   }
 

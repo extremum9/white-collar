@@ -45,8 +45,8 @@
   }
 
   &-icon {
-    @include icon-circle(toRem(72));
-    color: var(--contrast-color);
+    @include circle-icon(toRem(72));
+    color: var(--light-color);
     background-color: var(--primary-color);
   }
 }
@@ -55,7 +55,7 @@
   display: grid;
   place-content: center;
   border: 2px solid var(--secondary-color);
-  color: var(--contrast-color);
+  color: var(--light-color);
   background-color: var(--secondary-color);
   transition-property: color, background-color;
   @include hover {

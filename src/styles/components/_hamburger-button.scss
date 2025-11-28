@@ -1,4 +1,4 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .hamburger-button {
   display: flex;
@@ -8,7 +8,7 @@
   width: toRem(60);
   height: toRem(60);
   padding: toRem(22) toRem(18);
-  color: var(--contrast-color);
+  color: var(--light-color);
   background-color: var(--secondary-color);
   transition-property: background-color;
   @include hover {
@@ -34,6 +34,6 @@
 
   &::before,
   &::after {
-    content: "";
+    content: '';
   }
 }

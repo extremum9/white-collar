@@ -10,7 +10,7 @@
   border: 0 !important;
 }
 
-@mixin icon-circle($size) {
+@mixin circle-icon($size) {
   display: inline-grid;
   place-content: center;
   flex-shrink: 0;

@@ -3,7 +3,7 @@
 .home-why-choose {
   &-section {
     padding-block: toRem(110) toRem(80);
-    color: var(--contrast-color);
+    color: var(--light-color);
     background: url('/images/why-choose-image.jpg') center / auto no-repeat;
     background-color: var(--heading-color);
     @include breakpoint-3xl-up {
@@ -63,8 +63,8 @@
   }
 
   &-metrics {
-    .link-cta {
-      justify-self: start;
+    .metrics-title {
+      color: var(--light-color);
     }
   }
 }

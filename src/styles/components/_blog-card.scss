@@ -1,72 +1,72 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .blog-card {
-	position: relative;
-	&-image {
-		img {
-			width: 100%;
-		}
-	}
+  position: relative;
+  &-image {
+    img {
+      width: 100%;
+    }
+  }
 
-	&-meta {
-		display: grid;
-		margin-block-end: toRem(20);
-		@include breakpoint-xl-up {
-			grid-template-columns: repeat(3, 1fr);
-		}
+  &-meta {
+    display: grid;
+    margin-block-end: toRem(20);
+    @include breakpoint-xl-up {
+      grid-template-columns: repeat(3, 1fr);
+    }
 
-		&-date,
-		&-link {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			padding: toRem(20) toRem(10);
-			text-align: center;
-			@include breakpoint-xs-down {
-				padding: toRem(14) toRem(10);
-			}
-		}
+    &-date,
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: toRem(20) toRem(10);
+      text-align: center;
+      @include breakpoint-xs-down {
+        padding: toRem(14) toRem(10);
+      }
+    }
 
-		&-date {
-			color: var(--contrast-color);
-			background-color: var(--secondary-color);
-		}
+    &-date {
+      color: var(--light-color);
+      background-color: var(--secondary-color);
+    }
 
-		&-link {
-			gap: toRem(10);
-			position: relative;
-			z-index: 2;
-			color: var(--heading-color);
-			background-color: var(--primary-color);
-			transition-property: background-color;
-			&:not(:last-child) {
-				border-block-end: 2px solid #2d9e82;
-				@include breakpoint-xl-up {
-					border-inline-end: 2px solid #2d9e82;
-					border-block-end: none;
-				}
-			}
+    &-link {
+      gap: toRem(10);
+      position: relative;
+      z-index: 2;
+      color: var(--heading-color);
+      background-color: var(--primary-color);
+      transition-property: background-color;
+      &:not(:last-child) {
+        border-block-end: 2px solid #2d9e82;
+        @include breakpoint-xl-up {
+          border-inline-end: 2px solid #2d9e82;
+          border-block-end: none;
+        }
+      }
 
-			svg {
-				color: #207f68;
-			}
+      svg {
+        color: #207f68;
+      }
 
-			@include hover {
-				background-color: var(--white-color);
-			}
-		}
-	}
+      @include hover {
+        background-color: var(--white-color);
+      }
+    }
+  }
 
-	&-title {
-		margin-block-end: toRem(12);
-		@include hover {
-			a {
-				color: var(--secondary-color);
-			}
-		}
-	}
+  &-title {
+    margin-block-end: toRem(12);
+    @include hover {
+      a {
+        color: var(--secondary-color);
+      }
+    }
+  }
 
-	&-description {
-		margin-block-end: toRem(20);
-	}
+  &-description {
+    margin-block-end: toRem(20);
+  }
 }

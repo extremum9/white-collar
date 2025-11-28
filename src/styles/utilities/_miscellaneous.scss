@@ -1,4 +1,4 @@
-@use 'abstracts' as *;
+@use '../abstracts' as *;
 
 .container {
   width: min(
@@ -27,11 +27,11 @@
   }
 
   &-light {
-    color: var(--contrast-color);
+    color: var(--light-color);
     .section-head {
       &-subtitle,
       &-title {
-        color: var(--contrast-color);
+        color: var(--light-color);
       }
     }
   }
@@ -58,10 +58,6 @@
   &-title {
     &:not(:last-child) {
       margin-block-end: toRem(20);
-    }
-
-    &-highlight-text {
-      color: var(--contrast-color);
     }
   }
 }

@@ -1,94 +1,94 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .how-we-work {
-	&-section {
-		padding-block: toRem(140) toRem(120);
-		background-color: var(--secondary-color);
-		&,
-		.heading-6 {
-			color: var(--contrast-color);
-		}
+  &-section {
+    padding-block: toRem(140) toRem(120);
+    background-color: var(--secondary-color);
+    &,
+    .heading-6 {
+      color: var(--light-color);
+    }
 
-		@include breakpoint-xl-down {
-			padding-block: toRem(80);
-		}
+    @include breakpoint-xl-down {
+      padding-block: toRem(80);
+    }
 
-		@include breakpoint-md-down {
-			padding-block: toRem(40);
-		}
+    @include breakpoint-md-down {
+      padding-block: toRem(40);
+    }
 
-		.container {
-			display: grid;
-			gap: toRem(35);
-			@include breakpoint-lg-up {
-				grid-template-columns: repeat(2, 1fr);
-			}
-		}
-	}
+    .container {
+      display: grid;
+      gap: toRem(35);
+      @include breakpoint-lg-up {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
 
-	&-project-count {
-		display: flex;
-		align-items: center;
-		gap: toRem(20);
-		margin-block: toRem(40);
-		padding: toRem(35);
-		background-color: var(--primary-color);
-		@include breakpoint-sm-down {
-			padding: toRem(20);
-			gap: toRem(16);
-		}
+  &-project-count {
+    display: flex;
+    align-items: center;
+    gap: toRem(20);
+    margin-block: toRem(40);
+    padding: toRem(35);
+    background-color: var(--primary-color);
+    @include breakpoint-sm-down {
+      padding: toRem(20);
+      gap: toRem(16);
+    }
 
-		@include breakpoint-xs-down {
-			margin-block: toRem(30);
-		}
+    @include breakpoint-xs-down {
+      margin-block: toRem(30);
+    }
 
-		@include breakpoint-2xs-down {
-			flex-direction: column;
-			align-items: start;
-		}
+    @include breakpoint-2xs-down {
+      flex-direction: column;
+      align-items: start;
+    }
 
-		svg {
-			@include breakpoint-xs-down {
-				width: toRem(100);
-				height: toRem(100);
-			}
-		}
+    svg {
+      @include breakpoint-xs-down {
+        width: toRem(100);
+        height: toRem(100);
+      }
+    }
 
-		&-description {
-			font-family: var(--font-family-secondary);
-			font-size: var(--text-size-xl);
-			@include breakpoint-xs-down {
-				font-size: var(--text-size-md);
-			}
-		}
-	}
+    &-description {
+      font-family: var(--font-family-secondary);
+      font-size: var(--text-size-xl);
+      @include breakpoint-xs-down {
+        font-size: var(--text-size-md);
+      }
+    }
+  }
 
-	&-booking {
-		&-form {
-			display: grid;
-			row-gap: toRem(25);
-			margin-block-start: toRem(40);
-			padding: toRem(60) toRem(45) toRem(40);
-			background-color: var(--contrast-color);
-			@include breakpoint-md-down {
-				padding: toRem(40) toRem(30) toRem(30);
-			}
+  &-booking {
+    &-form {
+      display: grid;
+      row-gap: toRem(25);
+      margin-block-start: toRem(40);
+      padding: toRem(60) toRem(45) toRem(40);
+      background-color: var(--light-color);
+      @include breakpoint-md-down {
+        padding: toRem(40) toRem(30) toRem(30);
+      }
 
-			@include breakpoint-xs-down {
-				margin-block-start: toRem(30);
-				padding: toRem(20);
-			}
+      @include breakpoint-xs-down {
+        margin-block-start: toRem(30);
+        padding: toRem(20);
+      }
 
-			.form-row {
-				gap: toRem(25) toRem(20);
-			}
+      .form-row {
+        gap: toRem(25) toRem(20);
+      }
 
-			button[type="submit"] {
-				margin-block-start: toRem(10);
-				@include breakpoint-xs-up {
-					justify-self: start;
-				}
-			}
-		}
-	}
+      button[type='submit'] {
+        margin-block-start: toRem(10);
+        @include breakpoint-xs-up {
+          justify-self: start;
+        }
+      }
+    }
+  }
 }

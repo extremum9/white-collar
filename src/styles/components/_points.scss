@@ -17,22 +17,8 @@
     }
   }
 
-  &-icon {
-    &-primary {
-      color: var(--primary-color);
-    }
-
-    &-secondary {
-      color: var(--secondary-color);
-    }
-  }
-
   &-title {
     font-weight: 400;
-    &-highlight {
-      font-weight: 600;
-    }
-
     &:not(:last-child) {
       margin-block-end: toRem(10);
     }

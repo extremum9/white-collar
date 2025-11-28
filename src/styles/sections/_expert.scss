@@ -1,59 +1,60 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .expert {
-	&-section {
-		padding-block: toRem(250);
-		background: url("/images/expert-image.jpg") center / cover no-repeat;
-		@include breakpoint-2xl-down {
-			padding-block: toRem(220);
-		}
+  &-section {
+    padding-block: toRem(250);
+    background: url('/images/expert-image.jpg') center / cover no-repeat;
+    @include breakpoint-2xl-down {
+      padding-block: toRem(220);
+    }
 
-		@include breakpoint-xl-down {
-			padding-block: toRem(180);
-		}
+    @include breakpoint-xl-down {
+      padding-block: toRem(180);
+    }
 
-		@include breakpoint-lg-down {
-			padding-block: toRem(100);
-		}
+    @include breakpoint-lg-down {
+      padding-block: toRem(100);
+    }
 
-		@include breakpoint-md-down {
-			padding-block: toRem(80);
-		}
+    @include breakpoint-md-down {
+      padding-block: toRem(80);
+    }
 
-		@include breakpoint-xs-down {
-			padding-block: toRem(40);
-		}
-	}
+    @include breakpoint-xs-down {
+      padding-block: toRem(40);
+    }
+  }
 
-	&-title {
-		text-align: center;
-		color: var(--contrast-color);
-	}
+  &-title {
+    text-align: center;
+    color: var(--light-color);
+  }
 
-	&-link {
-		padding: toRem(87) toRem(130);
-		backdrop-filter: blur(toRem(4));
-		background-color: rgba(55, 57, 63, 0.8);
-		transition: background-color var(--transition-duration) var(--transition-timing-function);
-		@include hover {
-			background-color: var(--primary-color);
-		}
+  &-link {
+    padding: toRem(87) toRem(130);
+    backdrop-filter: blur(toRem(4));
+    background-color: rgba(55, 57, 63, 0.8);
+    transition: background-color var(--transition-duration)
+      var(--transition-timing-function);
+    @include hover {
+      background-color: var(--primary-color);
+    }
 
-		@include breakpoint-xl-down {
-			padding: toRem(70) toRem(130);
-		}
+    @include breakpoint-xl-down {
+      padding: toRem(70) toRem(130);
+    }
 
-		@include breakpoint-lg-down {
-			display: grid;
-			padding: toRem(70) toRem(100);
-		}
+    @include breakpoint-lg-down {
+      display: grid;
+      padding: toRem(70) toRem(100);
+    }
 
-		@include breakpoint-md-down {
-			padding: toRem(60);
-		}
+    @include breakpoint-md-down {
+      padding: toRem(60);
+    }
 
-		@include breakpoint-xs-down {
-			padding: toRem(40);
-		}
-	}
+    @include breakpoint-xs-down {
+      padding: toRem(40);
+    }
+  }
 }

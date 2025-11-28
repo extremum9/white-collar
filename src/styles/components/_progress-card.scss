@@ -1,22 +1,22 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .progress-card {
-	display: flex;
-	align-items: center;
-	gap: toRem(12);
-	padding: toRem(27) toRem(30);
-	background-color: #2e2f34;
-	@include breakpoint-xs-down {
-		padding: toRem(20);
-	}
+  display: flex;
+  align-items: center;
+  gap: toRem(12);
+  padding: toRem(27) toRem(30);
+  background-color: #2e2f34;
+  @include breakpoint-xs-down {
+    padding: toRem(20);
+  }
 
-	&-subtitle {
-		margin-block-end: toRem(5);
-		font-size: var(--text-size-sm);
-	}
+  &-subtitle {
+    margin-block-end: toRem(5);
+    font-size: var(--text-size-sm);
+  }
 
-	&-title {
-		font-size: var(--text-size-base);
-		color: var(--contrast-color);
-	}
+  &-title {
+    font-size: var(--text-size-base);
+    color: var(--light-color);
+  }
 }
