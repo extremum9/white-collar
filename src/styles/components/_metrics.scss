@@ -23,5 +23,8 @@
 
   &-rating {
     color: #ffb342;
+    svg {
+      vertical-align: unset;
+    }
   }
 }
