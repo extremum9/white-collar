@@ -3,8 +3,10 @@
 .achievement-card {
   padding-inline: toRem(10);
   text-align: center;
-  &:not(:last-child) {
-    border-inline-end: 1px solid rgba(55, 57, 63, 0.1);
+  @include breakpoint-xl-up {
+    &:not(:last-child) {
+      border-inline-end: 1px solid rgba(55, 57, 63, 0.1);
+    }
   }
 
   &-icon {
@@ -21,6 +23,9 @@
     font-weight: 700;
     line-height: 1.3;
     color: var(--primary-color);
+    @include breakpoint-xs-down {
+      font-size: var(--text-size-3xl);
+    }
   }
 
   &-title {

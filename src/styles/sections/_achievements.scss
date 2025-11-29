@@ -14,11 +14,21 @@
       z-index: -1;
       background-color: rgba(248, 248, 255, 0.91);
     }
+
+    @include breakpoint-xs-down {
+      padding-block: toRem(40);
+    }
   }
 
   &-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     row-gap: toRem(40);
+    @include breakpoint-xl-down {
+      grid-template-columns: repeat(
+        auto-fill,
+        minmax(min(toRem(380), 100%), 1fr)
+      );
+    }
   }
 }
