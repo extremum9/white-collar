@@ -54,6 +54,7 @@
 .service-more-card-link {
   display: grid;
   place-content: center;
+  height: 100%;
   border: 2px solid var(--secondary-color);
   color: var(--light-color);
   background-color: var(--secondary-color);
