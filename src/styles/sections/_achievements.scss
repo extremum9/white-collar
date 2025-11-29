@@ -1,0 +1,24 @@
+@use '../abstracts' as *;
+
+.achievements {
+  &-section {
+    position: relative;
+    isolation: isolate;
+    padding-block: toRem(70);
+    background: url('/images/achievements-background-image.jpg') center / cover
+      no-repeat;
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background-color: rgba(248, 248, 255, 0.91);
+    }
+  }
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: toRem(40);
+  }
+}
