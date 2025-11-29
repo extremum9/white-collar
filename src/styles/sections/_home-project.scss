@@ -1,58 +1,60 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .home-project {
-	&-section {
-		padding-block: toRem(140);
-		.container {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			gap: toRem(20);
-			margin-block-end: toRem(40);
-		}
+  &-section {
+    padding-block: toRem(140);
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: toRem(20);
+      margin-block-end: toRem(40);
+    }
 
-		.section-head {
-			margin-block-end: 0;
-			@include breakpoint-md-up {
-				max-width: toRem(500);
-			}
-		}
+    .section-head {
+      margin-block-end: 0;
+      @include breakpoint-md-up {
+        max-width: toRem(500);
+      }
+    }
 
-		@include breakpoint-xl-down {
-			padding-block: toRem(80);
-		}
+    @include breakpoint-xl-down {
+      padding-block: toRem(80);
+    }
 
-		@include breakpoint-md-down {
-			padding-block: toRem(40);
-			.container {
-				flex-direction: column;
-				align-items: start;
-			}
-		}
-	}
+    @include breakpoint-md-down {
+      padding-block: toRem(40);
+      .container {
+        flex-direction: column;
+        align-items: start;
+      }
+    }
+  }
 
-	&-list {
-		display: flex;
-		gap: toRem(20);
-		padding-inline: var(--container-padding-x);
-		@include breakpoint-md-down {
-			flex-direction: column;
-		}
-	}
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(toRem(280), 1fr));
+    gap: toRem(20);
+    padding-inline: var(--container-padding-x);
+  }
 
-	&-item {
-		width: 100%;
-		overflow: hidden;
-		@include hover {
-			img {
-				scale: 1.1;
-			}
-		}
+  &-item {
+    a {
+      width: 100%;
+      overflow: hidden;
+    }
 
-		img {
-			width: 100%;
-			scale: 1.01;
-			transition: scale var(--transition-duration) var(--transition-timing-function);
-		}
-	}
+    img {
+      width: 100%;
+      scale: 1.01;
+      transition: scale var(--transition-duration)
+        var(--transition-timing-function);
+    }
+
+    @include hover {
+      img {
+        scale: 1.1;
+      }
+    }
+  }
 }
