@@ -16,6 +16,14 @@
       background-color: rgba(64, 221, 182, 0.75);
     }
 
+    @include breakpoint-xl-down {
+      padding-block: toRem(80);
+    }
+
+    @include breakpoint-md-down {
+      padding-block: toRem(40);
+    }
+
     .container {
       text-align: center;
     }
@@ -23,6 +31,9 @@
     .section-head {
       max-width: toRem(700);
       margin: 0 auto toRem(40);
+      @include breakpoint-md-down {
+        margin: 0 auto toRem(20);
+      }
     }
   }
 
