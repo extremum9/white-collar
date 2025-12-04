@@ -1,0 +1,36 @@
+@use '../abstracts' as *;
+
+.video {
+  &-section {
+    position: relative;
+    isolation: isolate;
+    padding-block: toRem(140);
+    background: var(--primary-color) url('/images/video-background-image.jpg')
+      center / cover no-repeat;
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      backdrop-filter: blur(toRem(6));
+      background-color: rgba(64, 221, 182, 0.75);
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .section-head {
+      max-width: toRem(700);
+      margin: 0 auto toRem(40);
+    }
+  }
+
+  &-play-button {
+    @include hover {
+      .play-button-icon {
+        background-color: var(--heading-color);
+      }
+    }
+  }
+}
