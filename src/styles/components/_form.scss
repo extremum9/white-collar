@@ -1,11 +1,11 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .form {
-	&-row {
-		display: flex;
-		align-items: center;
-		@include breakpoint-sm-down {
-			flex-direction: column;
-		}
-	}
+  &-row {
+    display: flex;
+    align-items: center;
+    @include breakpoint-sm-down {
+      flex-direction: column;
+    }
+  }
 }

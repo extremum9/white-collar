@@ -1,4 +1,4 @@
-@use "./functions" as *;
+@use './functions' as *;
 
 @mixin breakpoint-3xl-up {
   @media (min-width: toEm(1920)) {

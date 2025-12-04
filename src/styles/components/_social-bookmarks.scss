@@ -1,13 +1,13 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .social-bookmarks {
-	display: flex;
-	align-items: center;
-	gap: toRem(16);
-	a {
-		vertical-align: middle;
-		@include hover {
-			color: var(--primary-color);
-		}
-	}
+  display: flex;
+  align-items: center;
+  gap: toRem(16);
+  a {
+    vertical-align: middle;
+    @include hover {
+      color: var(--primary-color);
+    }
+  }
 }

@@ -1,35 +1,35 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .testimonials {
-	&-section {
-		.container {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			align-items: start;
-			gap: toRem(16) toRem(38);
-			padding-block: toRem(140);
-			border-block-start: 1px solid #c5c5c5;
-			@include breakpoint-xl-down {
-				grid-template-columns: repeat(2, 1fr);
-				gap: toRem(16) toRem(20);
-				padding-block: toRem(80);
-			}
+  &-section {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: start;
+      gap: toRem(16) toRem(38);
+      padding-block: toRem(140);
+      border-block-start: 1px solid #c5c5c5;
+      @include breakpoint-xl-down {
+        grid-template-columns: repeat(2, 1fr);
+        gap: toRem(16) toRem(20);
+        padding-block: toRem(80);
+      }
 
-			@include breakpoint-md-down {
-				grid-template-columns: 1fr;
-				padding-block: toRem(40);
-			}
-		}
+      @include breakpoint-md-down {
+        grid-template-columns: 1fr;
+        padding-block: toRem(40);
+      }
+    }
 
-		.section-head {
-			margin-block-end: 0;
-			@include breakpoint-xl-down {
-				grid-column: 1 / -1;
-			}
-		}
-	}
+    .section-head {
+      margin-block-end: 0;
+      @include breakpoint-xl-down {
+        grid-column: 1 / -1;
+      }
+    }
+  }
 
-	&-list {
-		display: contents;
-	}
+  &-list {
+    display: contents;
+  }
 }

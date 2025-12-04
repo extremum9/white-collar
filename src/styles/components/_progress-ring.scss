@@ -1,7 +1,7 @@
 .progress-ring {
-	rotate: -90deg;
-	&-value {
-		rotate: 90deg;
-		transform-origin: center;
-	}
+  rotate: -90deg;
+  &-value {
+    rotate: 90deg;
+    transform-origin: center;
+  }
 }

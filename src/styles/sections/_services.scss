@@ -1,24 +1,27 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .services {
-	&-section {
-		padding-block-end: toRem(130);
-		@include breakpoint-lg-down {
-			padding-block-end: toRem(80);
-		}
+  &-section {
+    padding-block-end: toRem(130);
+    @include breakpoint-lg-down {
+      padding-block-end: toRem(80);
+    }
 
-		@include breakpoint-md-down {
-			padding-block-end: toRem(40);
-		}
+    @include breakpoint-md-down {
+      padding-block-end: toRem(40);
+    }
 
-		.section-head {
-			margin-block-end: toRem(40);
-		}
-	}
+    .section-head {
+      margin-block-end: toRem(40);
+    }
+  }
 
-	&-list {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(min(toRem(350), 100%), 1fr));
-		gap: toRem(30);
-	}
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(min(toRem(350), 100%), 1fr)
+    );
+    gap: toRem(30);
+  }
 }
