@@ -9,5 +9,14 @@
     @include hover {
       color: var(--primary-color);
     }
+
+    &-circle {
+      @include circle-icon(toRem(50));
+      color: var(--light-color);
+      background-color: var(--primary-color);
+      @include hover {
+        background-color: var(--heading-color);
+      }
+    }
   }
 }

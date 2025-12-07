@@ -19,6 +19,12 @@
     }
   }
 
+  &-image {
+    img {
+      width: 100%;
+    }
+  }
+
   &-content {
     position: absolute;
     left: 0;
@@ -27,21 +33,13 @@
   }
 
   &-socials {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    gap: toRem(16);
     padding-block-end: toRem(100);
     opacity: 0;
     transition: opacity var(--transition-duration)
       var(--transition-timing-function);
-    a {
-      @include circle-icon(toRem(50));
-      color: var(--light-color);
-      background-color: var(--primary-color);
-      @include hover {
-        background-color: var(--heading-color);
-      }
+    @include breakpoint-xl-down {
+      padding-block-end: toRem(70);
     }
   }
 
