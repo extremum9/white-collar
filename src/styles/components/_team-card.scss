@@ -1,0 +1,58 @@
+@use '../abstracts' as *;
+
+.team-card {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    background-color: rgba(107, 119, 229, 0.7);
+    transition: opacity var(--transition-duration)
+      var(--transition-timing-function);
+  }
+
+  @include hover {
+    &::before,
+    .team-card-socials {
+      opacity: 1;
+    }
+  }
+
+  &-content {
+    position: absolute;
+    left: 0;
+    bottom: 4%;
+    width: 100%;
+  }
+
+  &-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: toRem(10);
+    padding-block-end: toRem(100);
+    opacity: 0;
+    transition: opacity var(--transition-duration)
+      var(--transition-timing-function);
+    a {
+      @include circle-icon(toRem(50));
+      color: var(--light-color);
+      background-color: var(--primary-color);
+      @include hover {
+        background-color: var(--heading-color);
+      }
+    }
+  }
+
+  &-details {
+    margin-inline: toRem(20);
+    padding: toRem(24) toRem(10);
+    text-align: center;
+    background-color: var(--light-color);
+  }
+
+  &-name {
+    margin-block-end: toRem(4);
+  }
+}

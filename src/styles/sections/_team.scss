@@ -1,0 +1,24 @@
+@use '../abstracts' as *;
+
+.team {
+  &-section {
+    padding-block: toRem(140);
+    @include breakpoint-xl-down {
+      padding-block: toRem(80);
+    }
+
+    @include breakpoint-md-down {
+      padding-block: toRem(40);
+    }
+
+    .section-head {
+      margin-block-end: toRem(40);
+    }
+  }
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: toRem(30);
+  }
+}
