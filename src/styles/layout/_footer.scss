@@ -117,7 +117,6 @@
     display: flex;
     align-items: start;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: toRem(10) toRem(16);
     @include breakpoint-lg-down {
       flex-direction: column;
