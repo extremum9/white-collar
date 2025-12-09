@@ -7,6 +7,7 @@
     display: inline-flex;
     align-items: center;
     column-gap: toRem(6);
+    width: 100%;
     svg {
       margin-block-start: toRem(2);
     }
@@ -32,7 +33,7 @@
     width: 100%;
     padding: toRem(10) toRem(20);
     @include breakpoint-lg-down {
-      justify-content: center;
+      padding-inline-start: toRem(10);
       font-size: var(--text-size-md);
     }
   }

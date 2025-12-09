@@ -73,10 +73,6 @@
   &-nav {
     flex-grow: 1;
     @include breakpoint-lg-down {
-      display: flex;
-      align-items: center;
-      justify-content: safe center;
-      flex-direction: column;
       position: fixed;
       inset: calc(var(--topbar-body-height) + var(--topbar-head-height)) 0 0;
       translate: 100% 0;
@@ -130,6 +126,7 @@
 
     @include breakpoint-lg-down {
       flex-direction: column;
+      align-items: start;
       font-size: var(--text-size-lg);
     }
   }
