@@ -1,13 +1,13 @@
 @use '../abstracts' as *;
 
 .companies-section {
-  padding-block: toRem(100) toRem(80);
+  padding-block-start: toRem(100);
   @include breakpoint-xl-down {
-    padding-block: toRem(60);
+    padding-block-start: toRem(60);
   }
 
   @include breakpoint-md-down {
-    padding-block: toRem(20) toRem(60);
+    padding-block-start: toRem(40);
   }
 
   .container {

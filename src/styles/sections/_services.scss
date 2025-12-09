@@ -2,13 +2,13 @@
 
 .services {
   &-section {
-    padding-block-end: toRem(130);
+    padding-block: toRem(100) toRem(140);
     @include breakpoint-lg-down {
-      padding-block-end: toRem(80);
+      padding-block: toRem(80);
     }
 
     @include breakpoint-md-down {
-      padding-block-end: toRem(40);
+      padding-block: toRem(40);
     }
 
     .section-head {
