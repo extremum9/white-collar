@@ -129,6 +129,16 @@
 		<path fill="none" stroke="currentColor" d="M26.7539 13.8181L29.2659 15.6692L35.2817 8.00073" stroke-width="2" stroke-miterlimit="10" />
 	</symbol>
 
+	<symbol id="books" viewBox="0 0 48 48">
+		<path fill="none" stroke="currentColor" d="M15 7.5H9C8.17157 7.5 7.5 8.17157 7.5 9V39C7.5 39.8284 8.17157 40.5 9 40.5H15C15.8284 40.5 16.5 39.8284 16.5 39V9C16.5 8.17157 15.8284 7.5 15 7.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" stroke="currentColor" d="M7.5 15H16.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" stroke="currentColor" d="M24 7.5H18C17.1716 7.5 16.5 8.17157 16.5 9V39C16.5 39.8284 17.1716 40.5 18 40.5H24C24.8284 40.5 25.5 39.8284 25.5 39V9C25.5 8.17157 24.8284 7.5 24 7.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" stroke="currentColor" d="M16.5 33H25.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" stroke="currentColor" d="M32.9127 7.00898L27.0927 8.56898C26.2891 8.78438 25.8123 9.61041 26.0277 10.414L33.8277 39.514C34.0431 40.3176 34.8691 40.7944 35.6727 40.579L41.4927 39.019C42.2963 38.8036 42.7731 37.9776 42.5577 37.174L34.7577 8.07398C34.5423 7.27041 33.7163 6.79359 32.9127 7.00898Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" stroke="currentColor" d="M32.0996 33.6001L40.7996 31.2563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" stroke="currentColor" d="M27.4502 16.2L36.1502 13.875" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+	</symbol>
+
 	<symbol id="bag" viewBox="0 0 43 43">
 		<path fill="none" stroke="currentColor" d="M36.2812 12.0938H6.71875C5.97662 12.0938 5.375 12.6954 5.375 13.4375V34.9375C5.375 35.6796 5.97662 36.2812 6.71875 36.2812H36.2812C37.0234 36.2812 37.625 35.6796 37.625 34.9375V13.4375C37.625 12.6954 37.0234 12.0938 36.2812 12.0938Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 		<path fill="none" stroke="currentColor" d="M28.2188 36.2812V9.40625C28.2188 8.69348 27.9356 8.0099 27.4316 7.5059C26.9276 7.0019 26.244 6.71875 25.5312 6.71875H17.4688C16.756 6.71875 16.0724 7.0019 15.5684 7.5059C15.0644 8.0099 14.7812 8.69348 14.7812 9.40625V36.2812" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
