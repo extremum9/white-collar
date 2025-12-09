@@ -8,8 +8,8 @@
       isolation: isolate;
       padding: toRem(100) toRem(60);
       text-align: center;
-      background: var(--primary-color) url('/images/cta-image.jpg') center /
-        cover no-repeat;
+      background: var(--primary-color) url('/images/cta-background-image.jpg')
+        center / cover no-repeat;
       &::before {
         content: '';
         position: absolute;

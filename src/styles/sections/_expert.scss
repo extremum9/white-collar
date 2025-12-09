@@ -3,7 +3,8 @@
 .expert {
   &-section {
     padding-block: toRem(250);
-    background: url('/images/expert-image.jpg') center / cover no-repeat;
+    background: url('/images/expert-background-image.jpg') center / cover
+      no-repeat;
     @include breakpoint-2xl-down {
       padding-block: toRem(220);
     }
