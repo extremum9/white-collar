@@ -4,6 +4,7 @@ const initTopbar = () => {
   const selectors = {
     hamburgerButton: '.js-hamburger-button'
   };
+
   const stateClasses = {
     preventScroll: 'prevent-scroll',
     menuOpen: 'menu-open'
@@ -21,7 +22,7 @@ const initTopbar = () => {
     body.classList.toggle(stateClasses.menuOpen);
   };
 
-  const updateMenu = (mediaQuery) => {
+  const resetMenu = (mediaQuery) => {
     if (!mediaQuery.matches) {
       body.classList.remove(stateClasses.preventScroll);
       body.classList.remove(stateClasses.menuOpen);
@@ -29,9 +30,9 @@ const initTopbar = () => {
     }
   };
 
-  updateMenu(tabletMediaQuery);
   hamburgerButton.addEventListener('click', toggleMenu);
-  tabletMediaQuery.addEventListener('change', updateMenu);
+  tabletMediaQuery.addEventListener('change', resetMenu);
+  resetMenu(tabletMediaQuery);
 };
 
 export default initTopbar;
