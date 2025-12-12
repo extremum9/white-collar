@@ -16,6 +16,7 @@
     &::before,
     .team-card-socials {
       opacity: 1;
+      visibility: visible;
     }
   }
 
@@ -36,8 +37,10 @@
     justify-content: center;
     padding-block-end: toRem(100);
     opacity: 0;
+    visibility: hidden;
     transition: opacity var(--transition-duration)
-      var(--transition-timing-function);
+        var(--transition-timing-function),
+      visibility var(--transition-duration) var(--transition-timing-function);
     @include breakpoint-xl-down {
       padding-block-end: toRem(70);
     }
