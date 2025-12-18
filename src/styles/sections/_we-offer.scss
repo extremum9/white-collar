@@ -1,0 +1,52 @@
+@use '../abstracts' as *;
+
+.we-offer {
+  &-section {
+    margin-block-end: toRem(100);
+    padding-block: toRem(140);
+    background-color: var(--heading-color);
+    .section-head {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: end;
+      margin-block-end: toRem(40);
+    }
+
+    @include breakpoint-xl-down {
+      padding-block: toRem(80);
+    }
+
+    @include breakpoint-md-down {
+      padding-block: toRem(40);
+    }
+  }
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: toRem(30);
+  }
+
+  &-card {
+    padding: toRem(45) toRem(40) toRem(40);
+    text-align: center;
+    color: var(--light-color);
+    border: 1px solid #636363;
+    background-color: var(--heading-color);
+    transition: background-color var(--transition-duration)
+      var(--transition-timing-function);
+    @include hover {
+      background-color: var(--secondary-color);
+    }
+
+    &-icon {
+      margin-block-end: toRem(18);
+      color: var(--primary-color);
+    }
+
+    &-title {
+      margin-block-end: toRem(15);
+      color: var(--light-color);
+    }
+  }
+}
