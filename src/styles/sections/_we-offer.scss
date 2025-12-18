@@ -2,14 +2,16 @@
 
 .we-offer {
   &-section {
-    margin-block-end: toRem(100);
     padding-block: toRem(140);
     background-color: var(--heading-color);
     .section-head {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
       align-items: end;
+      gap: toRem(20);
       margin-block-end: toRem(40);
+      @include breakpoint-md-up {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     @include breakpoint-xl-down {
@@ -23,7 +25,7 @@
 
   &-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(toRem(260), 1fr));
     gap: toRem(30);
   }
 
@@ -37,6 +39,10 @@
       var(--transition-timing-function);
     @include hover {
       background-color: var(--secondary-color);
+    }
+
+    @include breakpoint-xs-down {
+      padding: toRem(25) toRem(20) toRem(20);
     }
 
     &-icon {
