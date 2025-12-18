@@ -162,6 +162,36 @@
 		<path fill="none" stroke="currentColor" d="M27.6475 13.1016C27.8387 12.0995 28.3113 11.1725 29.0098 10.429C29.7083 9.68551 30.604 9.15615 31.5922 8.90278C32.5804 8.64941 33.6203 8.68251 34.5904 8.99821C35.5605 9.3139 36.4208 9.89915 37.0706 10.6856C37.7204 11.472 38.133 12.4271 38.2602 13.4393C38.3874 14.4515 38.2239 15.4791 37.7888 16.4018C37.3537 17.3245 36.665 18.1044 35.8031 18.6502C34.9413 19.1961 33.9418 19.4854 32.9217 19.4844" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 	</symbol>
 
+	<symbol id="desktop" viewBox="0 0 60 60">
+		<path fill="none" stroke="currentColor" d="M11.25 45L48.75 45C50.8211 45 52.5 43.3211 52.5 41.25L52.5 15C52.5 12.9289 50.8211 11.25 48.75 11.25L11.25 11.25C9.17893 11.25 7.5 12.9289 7.5 15L7.5 41.25C7.5 43.3211 9.17893 45 11.25 45Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" stroke="currentColor" d="M37.5 52.5H22.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" stroke="currentColor" d="M7.5 35.625H52.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" stroke="currentColor" d="M30 45V52.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+	</symbol>
+
+	<symbol id="ruler" viewBox="0 0 60 60">
+		<path fill="none" stroke="currentColor" d="M38.0424 6.9471L6.9518 38.0377C6.21957 38.7699 6.21957 39.9571 6.9518 40.6894L19.3002 53.0378C20.0324 53.77 21.2196 53.77 21.9519 53.0378L53.0425 21.9472C53.7747 21.2149 53.7747 20.0277 53.0425 19.2955L40.6941 6.9471C39.9618 6.21486 38.7746 6.21486 38.0424 6.9471Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" stroke="currentColor" d="M30.9375 14.0625L38.4375 21.5625" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" stroke="currentColor" d="M22.5 22.5L30 30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" stroke="currentColor" d="M14.0625 30.9375L21.5625 38.4375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+	</symbol>
+
+	<symbol id="presentation" viewBox="0 0 60 60">
+		<path fill="none" stroke="currentColor" d="M11.25 43.125V16.875" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" stroke="currentColor" d="M48.75 16.875V43.125" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" stroke="currentColor" d="M22.5 30V33.75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" stroke="currentColor" d="M30 28.125V33.75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" stroke="currentColor" d="M37.5 26.25V33.75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" stroke="currentColor" d="M50.625 9.375H9.375C8.33947 9.375 7.5 10.2145 7.5 11.25V15C7.5 16.0355 8.33947 16.875 9.375 16.875H50.625C51.6605 16.875 52.5 16.0355 52.5 15V11.25C52.5 10.2145 51.6605 9.375 50.625 9.375Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" stroke="currentColor" d="M7.5 43.125H52.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+	</symbol>
+
+	<symbol id="square-pen" viewBox="0 0 60 60">
+		<path fill="none" stroke="currentColor" d="M30 37.5H22.5V30L45 7.5L52.5 15L30 37.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" stroke="currentColor" d="M39.375 13.125L46.875 20.625" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		<path fill="none" stroke="currentColor" d="M50.625 28.125V48.75C50.625 49.2473 50.4275 49.7242 50.0758 50.0758C49.7242 50.4275 49.2473 50.625 48.75 50.625H11.25C10.7527 50.625 10.2758 50.4275 9.92418 50.0758C9.57254 49.7242 9.375 49.2473 9.375 48.75V11.25C9.375 10.7527 9.57254 10.2758 9.92418 9.92418C10.2758 9.57254 10.7527 9.375 11.25 9.375H31.875" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+	</symbol>
+
 	<symbol id="star" viewBox="0 0 15 14">
 		<path fill="#ffb342" d="M6.27631 0.508955C6.65882 -0.16969 7.6361 -0.169691 8.01861 0.508953L9.62067 3.35128C9.76337 3.60446 10.0092 3.78303 10.294 3.84051L13.4923 4.48583C14.2559 4.63991 14.5579 5.56935 14.0307 6.14286L11.8226 8.54483C11.6259 8.75878 11.532 9.04772 11.5654 9.33642L11.9399 12.5776C12.0294 13.3514 11.2388 13.9259 10.5304 13.6017L7.56362 12.2438C7.29936 12.1229 6.99556 12.1229 6.7313 12.2438L3.76453 13.6017C3.05617 13.9259 2.26554 13.3514 2.35498 12.5776L2.72957 9.33642C2.76293 9.04772 2.66905 8.75878 2.47236 8.54483L0.26421 6.14286C-0.263017 5.56935 0.0389769 4.63991 0.802609 4.48583L4.00089 3.84051C4.28577 3.78303 4.53155 3.60446 4.67425 3.35128L6.27631 0.508955Z" />
 	</symbol>
