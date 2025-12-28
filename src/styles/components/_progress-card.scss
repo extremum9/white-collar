@@ -31,5 +31,8 @@
   &-title {
     font-size: var(--text-size-base);
     color: var(--light-color);
+    &:not(:last-child) {
+      margin-block-end: toRem(5);
+    }
   }
 }
