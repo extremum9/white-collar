@@ -6,6 +6,13 @@
   gap: toRem(12);
   padding: toRem(27) toRem(30);
   background-color: #2e2f34;
+  &-light {
+    background-color: var(--background-color);
+    .progress-card-title {
+      color: var(--heading-color);
+    }
+  }
+
   @include breakpoint-xs-down {
     padding: toRem(20);
   }

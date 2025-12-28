@@ -1,0 +1,31 @@
+@use '../abstracts' as *;
+
+.why-choose {
+  &-section {
+    padding-block: toRem(140) toRem(110);
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: end;
+      gap: toRem(30);
+    }
+
+    .section-head {
+      margin-block-end: 0;
+    }
+  }
+
+  &-body {
+    display: grid;
+    justify-items: start;
+    gap: toRem(40);
+  }
+
+  &-progress {
+    display: grid;
+    row-gap: toRem(40);
+    .progress-card {
+      padding: toRem(30) toRem(40);
+    }
+  }
+}
