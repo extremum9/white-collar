@@ -8,8 +8,14 @@
   background-color: #2e2f34;
   &-light {
     background-color: var(--background-color);
-    .progress-card-title {
-      color: var(--heading-color);
+    .progress-card {
+      &-subtitle {
+        color: var(--heading-color);
+      }
+
+      &-title {
+        color: var(--heading-color);
+      }
     }
   }
 

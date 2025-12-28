@@ -13,19 +13,52 @@
     .section-head {
       margin-block-end: 0;
     }
+
+    @include breakpoint-xl-down {
+      padding-block: toRem(80);
+      .container {
+        grid-template-columns: 1fr 0.8fr;
+      }
+    }
+
+    @include breakpoint-lg-down {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @include breakpoint-md-down {
+      padding-block: toRem(40);
+    }
   }
 
   &-body {
     display: grid;
     justify-items: start;
-    gap: toRem(40);
+    row-gap: toRem(40);
+    @include breakpoint-xs-down {
+      row-gap: toRem(30);
+    }
   }
 
   &-progress {
     display: grid;
     row-gap: toRem(40);
     .progress-card {
-      padding: toRem(30) toRem(40);
+      padding: toRem(35) toRem(40);
+    }
+
+    @include breakpoint-lg-up {
+      padding-block-end: toRem(40);
+    }
+
+    @include breakpoint-xs-down {
+      row-gap: toRem(30);
+      .progress-card {
+        flex-direction: column;
+        align-items: start;
+        padding: toRem(30);
+      }
     }
   }
 }
