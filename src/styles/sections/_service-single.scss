@@ -75,4 +75,27 @@
       }
     }
   }
+
+  &-cta {
+    &-block {
+      position: relative;
+      isolation: isolate;
+      padding: toRem(70) toRem(40) toRem(60);
+      text-align: center;
+      background: var(--primary-color)
+        url('/images/service-cta-background-image.jpg') center / cover no-repeat;
+      &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        backdrop-filter: blur(toRem(6));
+        background-color: rgba(64, 221, 182, 0.75);
+      }
+
+      .section-head {
+        margin-block-end: toRem(30);
+      }
+    }
+  }
 }
