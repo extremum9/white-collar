@@ -20,7 +20,8 @@
 }
 
 .service-sidebar {
-  &-services-block {
+  &-services-block,
+  &-download-block {
     margin-block-end: toRem(50);
     padding: toRem(50) toRem(30);
     background-color: var(--background-color);
@@ -42,6 +43,36 @@
     @include hover {
       color: var(--light-color);
       background-color: var(--secondary-color);
+    }
+  }
+
+  &-download {
+    &-content {
+      padding-block-start: toRem(20);
+      border-block-start: 2px solid var(--heading-color);
+    }
+
+    &-description {
+      margin-block-end: toRem(30);
+    }
+
+    &-links {
+      display: grid;
+      row-gap: toRem(20);
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      column-gap: toRem(20);
+      padding: toRem(15) toRem(30);
+      font-weight: 500;
+      color: var(--light-color);
+      background-color: var(--secondary-color);
+      transition-property: background-color;
+      @include hover {
+        background-color: var(--primary-color);
+      }
     }
   }
 }
