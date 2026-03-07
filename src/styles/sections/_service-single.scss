@@ -1,0 +1,47 @@
+@use '../abstracts' as *;
+
+.service-single {
+  &-body {
+    padding-block: toRem(140);
+    @include breakpoint-lg-down {
+      padding-block: toRem(80);
+    }
+
+    @include breakpoint-md-down {
+      padding-block: toRem(40);
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 0.5fr 1fr;
+      gap: toRem(30);
+    }
+  }
+}
+
+.service-sidebar {
+  &-services-block {
+    margin-block-end: toRem(50);
+    padding: toRem(50) toRem(30);
+    background-color: var(--background-color);
+  }
+
+  &-title {
+    margin-block-end: toRem(20);
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: toRem(10);
+    padding: toRem(15) toRem(20);
+    font-size: var(--text-size-md);
+    color: var(--heading-color);
+    transition-property: color, background-color;
+    @include hover {
+      color: var(--light-color);
+      background-color: var(--secondary-color);
+    }
+  }
+}
