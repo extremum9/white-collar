@@ -38,6 +38,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: toRem(30);
+      margin-block-end: toRem(60);
       .service-single-title-highlight {
         margin-block-end: toRem(20);
         color: var(--primary-color);
