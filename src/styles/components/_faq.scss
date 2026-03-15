@@ -17,6 +17,10 @@
         }
       }
     }
+
+    @include breakpoint-xs-down {
+      padding-inline: toRem(15);
+    }
   }
 
   &-header {
@@ -27,6 +31,9 @@
     padding-block: toRem(25);
     user-select: none;
     cursor: pointer;
+    @include breakpoint-xs-down {
+      padding-block: toRem(20);
+    }
   }
 
   &-indicator {

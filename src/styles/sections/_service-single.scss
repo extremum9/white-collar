@@ -13,13 +13,24 @@
 
     .container {
       display: grid;
-      grid-template-columns: 0.5fr 1fr;
       gap: toRem(30);
+      @include breakpoint-lg-up {
+        grid-template-columns: 0.5fr 1fr;
+      }
+    }
+  }
+
+  &-content {
+    @include breakpoint-lg-down {
+      order: -1;
     }
   }
 
   &-image {
     margin-block-end: toRem(40);
+    img {
+      width: 100%;
+    }
   }
 
   &-title {
@@ -36,12 +47,19 @@
   &-benefits {
     &-section {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
       gap: toRem(30);
       margin-block-end: toRem(60);
       .service-single-title-highlight {
         margin-block-end: toRem(20);
         color: var(--primary-color);
+      }
+
+      @include breakpoint-xl-up {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include breakpoint-xs-down {
+        margin-block-end: toRem(30);
       }
     }
 
@@ -59,6 +77,9 @@
     margin-block-end: toRem(50);
     padding: toRem(50) toRem(30);
     background-color: var(--background-color);
+    @include breakpoint-xs-down {
+      padding: toRem(20) toRem(30);
+    }
   }
 
   &-title {
@@ -77,6 +98,14 @@
     @include hover {
       color: var(--light-color);
       background-color: var(--secondary-color);
+    }
+
+    @include breakpoint-xl-down {
+      font-size: var(--text-size-base);
+    }
+
+    @include breakpoint-xs-down {
+      padding: toRem(15) toRem(10);
     }
   }
 
@@ -106,6 +135,10 @@
       transition-property: background-color;
       @include hover {
         background-color: var(--primary-color);
+      }
+
+      @include breakpoint-xs-down {
+        padding: toRem(15) toRem(20);
       }
     }
   }
