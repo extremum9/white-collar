@@ -18,20 +18,36 @@
     }
   }
 
-  &-content {
-    &-image {
-      margin-block-end: toRem(40);
-    }
+  &-image {
+    margin-block-end: toRem(40);
+  }
 
-    &-title {
-      margin-block-end: toRem(10);
-      &-highlight {
-        color: var(--secondary-color);
+  &-title {
+    margin-block-end: toRem(10);
+    &-highlight {
+      color: var(--secondary-color);
+    }
+  }
+
+  &-description {
+    margin-block-end: toRem(40);
+  }
+
+  &-benefits {
+    &-section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: toRem(30);
+      .service-single-title-highlight {
+        margin-block-end: toRem(20);
+        color: var(--primary-color);
       }
     }
 
-    &-description {
-      margin-block-end: toRem(40);
+    &-image {
+      img {
+        width: 100%;
+      }
     }
   }
 }
